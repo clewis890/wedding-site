@@ -7,13 +7,6 @@ import DesktopNav from '.././components/desktopnav'
 
 import Image from 'next/image'
 
-// const Cosmic = require('cosmicjs');
-// const api = Cosmic();
-// const bucket = api.bucket({
-//   slug: '0a13c1f0-1f6f-11eb-b8dd-3726b698816c',
-//   read_key: 'YjOK9jYoFGHOzS8suVefuLsNk7bgiMbANxMp6GbPUFgZA3zK36'
-// });
-
  function PhotoAlbum() {
     return (
         <>
