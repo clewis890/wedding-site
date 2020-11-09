@@ -5,12 +5,34 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "test": "jest",
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.12",
+    "cosmicjs": "^3.3.2",
+    "final-form": "^4.20.1",
+    "firebase": "^8.0.0",
     "next": "10.0.0",
     "next-auth": "^3.1.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-burger-menu": "^2.9.0",
+    "react-dom": "^17.0.1",
+    "react-final-form": "^6.5.2",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-form": "^8.3.6",
+    "sharp": "^0.26.2",
+    "sqlite3": "^5.0.0",
+    "stripe": "^8.120.0",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "firebase-tools": "^8.14.1"
   }
 }

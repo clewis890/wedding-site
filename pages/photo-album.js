@@ -2,44 +2,60 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
 import Countdown from '.././components/Countdown';
+import Navigation from '.././components/navigation';
+import DesktopNav from '.././components/desktopnav'
 
 import Image from 'next/image'
 
-export default function PhotoAlbum() {
+// const Cosmic = require('cosmicjs');
+// const api = Cosmic();
+// const bucket = api.bucket({
+//   slug: '0a13c1f0-1f6f-11eb-b8dd-3726b698816c',
+//   read_key: 'YjOK9jYoFGHOzS8suVefuLsNk7bgiMbANxMp6GbPUFgZA3zK36'
+// });
+
+ function PhotoAlbum() {
     return (
         <>
         <div className={styles.container}>
             <Head>
-                <title>We're getting married! Antonia and Clark</title>
+                <title>Fotos de Antonia e Clark</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <link rel="icon" href="/favicon.ico" />
             </Head>
 
         <main className={styles.main}>
-            <h1 className={styles.title}>
-                Antonia
-                <br />
-                Clark 
-            </h1>
-            <h2 className={styles.subtitle}>Wedding Countdown</h2>
+          <Navigation />
+            <h1 className={styles.title}>Antonia<br />Clark</h1>
                 <div className={styles.countdownBox}>
                 <Countdown className={styles.time}/>
                 </div>
-        <div className={styles.navigation}>
-    <Link href="/"><a className={styles.link}>Home</a></Link>
-    <Link href="/registry"><a className={styles.link}>Registry</a></Link>
-    <Link href="/guest-book"><a className={styles.link}>Guest Book</a></Link>
-    <Link href="/photo-album"><a className={styles.link}>Photo Album</a></Link>
-    <Link href="/rsvp"><a className={styles.link}>RSVP</a></Link>
-  </div>
+       <DesktopNav />
   <div className={styles.grid}>
-        <div className={styles.registrycard}>
+        <div className={styles.photocard}>
         <div className={styles.welcometext}>
           <h3>Photo Album</h3>
-            <p className={styles.casal}>Sua presença no nosso casamento é o melhor presente que poderíamos receber! Sabemos que alguns de vocês gostariam de contribuir com algo mais! Desde já agradecemos!
-            </p>
+            <p className={styles.casal}>Aqui sao algumas fotos do casal</p>
         </div>
-        <div className={styles.registrypicture}>
-          <Image src="/../public/images/Gift.jpg" alt="Wedding picture" width="400" height="200" />
+        <div className={styles.photoalbum}>
+        <div className={styles.albumpic}>
+          <Image src="/../public/images/antoniaclark1.jpg" alt="Antonia and Clark" width="250" height="350" />
+        </div>
+        <div className={styles.albumpic}>
+          <Image src="/../public/images/antoniaclark2.jpg" alt="Antonia and Clark" width="250" height="350" />
+        </div>
+        <div className={styles.albumpic}>
+          <Image src="/../public/images/antoniaclark3.jpg" alt="Antonia and Clark" width="250" height="350" />
+        </div>
+        <div className={styles.albumpic}>
+          <Image src="/../public/images/antoniaclark4.webp" alt="Antonia and Clark" width="250" height="350" />
+        </div>
+        <div className={styles.albumpic}>
+          <Image src="/../public/images/antoniaclark6.jpg" alt="Antonia and Clark" width="250" height="350" />
+        </div>
+        <div className={styles.albumpic}>
+          <Image src="/../public/images/antoniaclark7.jpg" alt="Antonia and Clark" width="250" height="350" />
+        </div>
         </div>
         </div>
         </div>
@@ -56,3 +72,6 @@ export default function PhotoAlbum() {
     </>
   )
 }
+
+
+export default PhotoAlbum;

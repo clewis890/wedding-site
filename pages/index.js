@@ -2,35 +2,30 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
 import Countdown from '.././components/Countdown';
-
+import Navigation from '.././components/navigation';
+import DesktopNav from '.././components/desktopnav'
 import Image from 'next/image'
 
-export default function Home() {    
+ export default function Home() {    
   return (
     <div className={styles.container}>
       <Head>
-        <title>We're getting married! Antonia and Clark</title>
+        <title>Nos vamos casar! Antonia e Clark</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Antonia<br/>Clark</h1>
-        <h1 className={styles.subtitle}>Wedding Countdown!</h1>
+      <Navigation />        
+        <h1 className={styles.title}>Antonia<br/>&<br />Clark</h1>
       <div className={styles.countdownBox}>
         <Countdown className={styles.time}/>
       </div>
-
-        <div className={styles.navigation}>
-          <Link href="/"><a className={styles.link}>Home</a></Link>
-          <Link href="/registry"><a className={styles.link}>Registry</a></Link>
-          <Link href="/guest-book"><a className={styles.link}>Guest Book</a></Link>
-          <Link href="/photo-album"><a className={styles.link}>Photo Album</a></Link>
-          <Link href="/rsvp"><a className={styles.link}>RSVP</a></Link>
-        </div>
+      <DesktopNav />        
         <div className={styles.grid}>
         <div className={styles.card1}>
         <div className={styles.picture}>
-          <Image src="/../public/images/AntoniaClark.webp" alt="Antonia and Clark" width="250" height="350" />
+          <Image src="/../public/images/antoniaclark4.webp" alt="Antonia and Clark" width="250" height="350" />
         </div>
         <div className={styles.welcometext}>
           <h3>Bem-vindos</h3>
@@ -39,8 +34,8 @@ export default function Home() {
         </div>
 
           <div className={styles.card}>
-            <h3>News</h3>
-            <p>Here are some news</p>
+            <h3>Noticias</h3>
+            <p className={styles.casal}>Colocamos algumas fotos da gente aqui no site, aqui tu pode confirmar tua presenca na festa, entre outras coisas. Obrigado por visitar nosso site e aguardamos tua presenca em Dezembro :)</p>
           </div>
           </div>
       </main> 
@@ -52,5 +47,6 @@ export default function Home() {
           <Link href="/rsvp"><a className={styles.footerlink}>RSVP</a></Link>
       </footer>
     </div>
+    
   )
 }

@@ -12,6 +12,10 @@ const Countdown = () => {
 
   useEffect(() => {
     setInterval(() => updateCountdown(), 1000);
+
+    return () => {
+      clearInterval(setInterval.current);
+    };
   }, []);
 
   const updateCountdown = () => {
@@ -49,19 +53,19 @@ const Countdown = () => {
     <div>
       <div className={styles.countdownWrapper}>
         <div className='time-section'>
-          <div className={styles.time}>{state.days || '0'} Days  &rarr;</div>
+          <div className={styles.time}>{state.days || '0'} <span className={styles.time2}>Days</span></div>
         </div>
         <div className='time-section'>
           <div className='time'></div>
         </div>
         <div className='time-section'>
-          <div className={styles.time}>{state.hours || '00'} Hours  &rarr;</div>
+          <div className={styles.time}>{state.hours || '00'} <span className={styles.time2}>Hours</span></div>
         </div>
         <div className='time-section'>
           <div className='time'></div>
         </div>
         <div className='time-section'>
-          <div className={styles.time}>{state.minutes || '00'} Minutes  </div>
+          <div className={styles.time}>{state.minutes || '00'} <span className={styles.time2}>Minutes</span></div>
         </div>
         <div className='time-section'>
           <div className='time'></div>
