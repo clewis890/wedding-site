@@ -25,7 +25,7 @@ import Image from 'next/image'
         <div className={styles.grid}>
         <div className={styles.card1}>
         <div className={styles.picture}>
-          <Image src="/../public/images/antoniaclark4.webp" alt="Antonia and Clark" width="250" height="350" />
+          <Image src="/images/antoniaclark4.webp" alt="Antonia and Clark" width="250" height="350" />
         </div>
         <div className={styles.welcometext}>
           <h3>Bem-vindos</h3>

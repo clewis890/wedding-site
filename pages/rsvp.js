@@ -29,7 +29,7 @@ export default function Registry() {
             <div className={styles.rsvpcard}>
               <div className={styles.registrypicture}>
               <h3>RSVP</h3>
-              <Image src="/../public/images/rsvp.jpg" alt="rsvp" width="400" height="300" />
+              <Image src="/images/rsvp.jpg" alt="rsvp" width="400" height="300" />
               </div>
             <div className={styles.rsvptext}>
               <p className={styles.guesttext}>Aqui podera confirmar tua presenca na festa! Mal podemos esperar :)</p>
