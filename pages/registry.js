@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Countdown from '.././components/Countdown';
 import Navigation from '.././components/navigation';
 import DesktopNav from '.././components/desktopnav'
-import Image from 'next/image'
+import Image from 'next/image';
 
 
 
@@ -42,15 +42,11 @@ export default function Registry() {
                 <input type="hidden" name="currency_code" value="USD" />
                 <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="Contribuir para o inicio de vida de Antonia e Clark nos Estados Unidos" alt="Faça doações com o botão do PayPal" />
                     <img alt="" border="0" src="https://www.paypal.com/pt_BR/i/scr/pixel.gif" width="1" height="1" />
-            </form>
-          {/* <RegistryGift /> */}
-
-          
+            </form>          
         </div>
         </div>
         </div>
         <div>
-            
         </div>
       </main>
 

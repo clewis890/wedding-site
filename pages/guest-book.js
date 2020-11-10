@@ -1,15 +1,15 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Countdown from '../components/Countdown';
 import Navigation from '.././components/navigation';
-import DesktopNav from '.././components/desktopnav'
+import DesktopNav from '.././components/desktopnav';
 
-import Image from 'next/image'
+import Image from 'next/image';
 
 export default function GuestBook() {
     return (
-        
+        <>
         <div className={styles.container}>
             <Head>
                 <title>We're getting married! Antonia and Clark</title>
@@ -18,7 +18,7 @@ export default function GuestBook() {
 
         <main className={styles.main}>
           <Navigation />
-            <h1 className={styles.title}>Antonia<br/>Clark</h1>
+            <h1 className={styles.title}>Antonia<br/>&<br />Clark</h1>
                 <div className={styles.countdownBox}>
                 <Countdown className={styles.time}/>
                 </div>
@@ -46,5 +46,6 @@ export default function GuestBook() {
           <Link href="/rsvp"><a className={styles.footerlink}>RSVP</a></Link>
       </footer>
     </div>
+    </>
   )
 }

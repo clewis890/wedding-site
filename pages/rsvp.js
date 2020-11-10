@@ -20,7 +20,7 @@ export default function Registry() {
 
         <main className={styles.main}>
           <Navigation />
-            <h1 className={styles.title}>Antonia<br />Clark</h1>
+            <h1 className={styles.title}>Antonia<br />&<br />Clark</h1>
                 <div className={styles.countdownBox}>
                   <Countdown className={styles.time}/>
                 </div>
