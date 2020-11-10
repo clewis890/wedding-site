@@ -13,6 +13,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.12",
     "cosmicjs": "^3.3.2",
+    "disqus-react": "^1.0.10",
     "final-form": "^4.20.1",
     "firebase": "^8.0.0",
     "next": "10.0.0",

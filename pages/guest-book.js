@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Countdown from '../components/Countdown';
 import Navigation from '.././components/navigation';
 import DesktopNav from '.././components/desktopnav';
+import DisqusComments from '.././components/Blog';
 
 import Image from 'next/image';
 
@@ -24,16 +25,12 @@ export default function GuestBook() {
                 </div>
       <DesktopNav />
   <div className={styles.grid}>
-        <div className={styles.card}>
+        <div className={styles.guestbookcard}>
         <div className={styles.welcometext}>
           <h3>Guestbook</h3>
-          <ul>
-            <li className={styles.casal}>New Message</li>
-            <li className={styles.casal}>Song</li>
-            <li className={styles.casal}>Video</li>
-            </ul>
-            
-        </div>
+          <p>Aqui pode deixar uma mensagem para nos se quiser!</p>
+          </div>
+          <DisqusComments />
         </div>
         </div>
       </main>
