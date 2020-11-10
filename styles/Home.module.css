@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Work+Sans&display=swap');
-p.casal p.guesttext {
-  font-family: 'Work Sans', sans-serif;
-}
 
-.welcomtext h3.guestbook {
-  font-size: 30px;
+h3.guestbook, 
+h3.phototitle, 
+h3.guestbook, 
+h3.welcome, 
+h3.phototitle, 
+h3.registrytitle {
+  font-size: 35px;
 }
 
 .container {
@@ -225,10 +227,10 @@ p.casal p.guesttext {
   -moz-border-radius:;
   -ms-border-radius:;
   -o-border-radius:;
-  -webkit-transition: color 0.15s ease, border-color 0.15s ease;
-  -moz-transition: color 0.15s ease, border-color 0.15s ease;
-  -ms-transition: color 0.15s ease, border-color 0.15s ease;
-  -o-transition: color 0.15s ease, border-color 0.15s ease;
+  -webkit-transition:;
+  -moz-transition:;
+  -ms-transition:;
+  -o-transition:;
 }
 .guestbookcard {
   background-color: #eaeaea;
@@ -245,10 +247,10 @@ p.casal p.guesttext {
   -moz-border-radius:;
   -ms-border-radius:;
   -o-border-radius:;
-  -webkit-transition: color 0.15s ease, border-color 0.15s ease;
-  -moz-transition: color 0.15s ease, border-color 0.15s ease;
-  -ms-transition: color 0.15s ease, border-color 0.15s ease;
-  -o-transition: color 0.15s ease, border-color 0.15s ease;
+  -webkit-transition:;
+  -moz-transition:;
+  -ms-transition:;
+  -o-transition:;
 }
 
 .card:hover,
@@ -314,7 +316,7 @@ p.casal p.guesttext {
 }
 
 .photocard {
-  width: 100%;
+  width: 80%;
   margin: 1em auto 3rem auto;
   background-color: #fff;
   flex-basis: 85%;
@@ -372,10 +374,21 @@ p.casal p.guesttext {
   flex-direction: column;
 }
 
+.phototext {
+  font-size: 18px;
+  width: 90%;
+}
+
 .welcome { font-size: 30px; }
 .registrycard h3 { font-size: 30px; }
-.casal { height: auto; }
+p.casal { font-size: 18px; }
+div.newsbox>p.casal { font-size: 18px; }
 .guest { line-height: 2rem; }
+
+h3.guestbook {
+  margin-top: 1rem;
+  font-size: 35px;
+}
 
 .form { 
   padding: 2px;
@@ -406,6 +419,7 @@ p.casal p.guesttext {
  -ms-transition: color 3.5s, box-shadow 0.3s, background-color 1.5s;
  -o-transition: color 3.5s, box-shadow 0.3s, background-color 1.5s;
 }
+
 .rsvpbutton:hover,
 .rsvpbutton:active {
   background-color: #b3927b;
@@ -456,7 +470,7 @@ div.label {
   padding: 5px;
   min-width: 10rem;
   min-height: 8rem;
-  max-width: 16.7rem;
+  max-width: 15.5rem;
   max-height: 18rem;
 }
 
@@ -506,17 +520,9 @@ option.option {
 }
 
 @media only screen and (min-height: 375px) and (max-width: 812px){
-  .rsvpcard {
-    flex-direction: column;
-  }
-  
-  .photocard {
-    width: 100%;
-  }
-
-  .photoalbum {
-    flex-direction: row;
-  }
+  .rsvpcard { flex-direction: column; }
+  .photocard { width: 100%;}
+  .photoalbum { flex-direction: row; }
 }
 
 @media (min-width: 600px) {
@@ -534,7 +540,7 @@ option.option {
     min-height: 60px;
     width: 20%;
     height: 20%;
-    max-width: 300px;
+    max-width: 19.5rem;
     max-height: 300px;
   }
 
@@ -579,6 +585,11 @@ option.option {
       align-items: center;
     }
 
+    .phototext { 
+      line-height: 1.7rem;
+      text-align: center;
+      width: 70%;
+    }
     .welcometext {
       flex-basis: 40%;
       width: 100%;
@@ -591,11 +602,12 @@ option.option {
 
     .welcometext h3 { font-size: 160%; }
 
-    div.welcometext>p.casal { 
+   p.casal { 
       line-height: 1.3em;
       font-size: 18px;
       width: 95%;
     }
+
 
     .picture {
       flex-basis: 15%;
@@ -611,9 +623,17 @@ option.option {
       text-align: left;
     }
     
+    .rsvpcard { width: 80%; }
+
     .registrypicture { flex-basis: 10%; }
     .guesttext { flex-basis: 30%}
-
+    h3.guestbook { 
+      margin-top: 1rem;
+      font-size: 35px;
+     }
+     h3.welcome { font-size: 35px; }
+     h3.phototitle { font-size: 35px; }
+     h3.registrytitle { font-size: 35px; }
     .photocard {
       width: 100%;
       margin: 1em auto 3rem auto;
@@ -631,13 +651,12 @@ option.option {
 }
 
 @media (min-width: 768px) {
-
   .mobilenav { padding: 0.4em; }
 
   .guestbookcard {
     background-color: #eaeaea;
     margin: 1rem;
-    width: 80%;
+    width: 90%;
     flex-basis: 75%;
     padding: 2rem;
 }
@@ -686,12 +705,15 @@ option.option {
     margin: 0 auto;
   }
 
+  h3.phototitle {
+    font-size: 35px;
+  }
+
   .photoalbum {
     display: inline-flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-
   }
 
   div.albumpic {
@@ -700,7 +722,6 @@ option.option {
     margin-bottom: 3%;
   }
   
-
 }
 
 @media (min-width: 992px) {
@@ -721,11 +742,8 @@ option.option {
   }
 
   .countdownWrapper { justify-content: center; }
-
   .time { font-size: 140%; }
-  
   .time2 { font-size: 65%; }
-
   .link { 
     font-weight: 400;
     font-size: 120%;
@@ -746,4 +764,24 @@ option.option {
     margin: 0 2rem;
     width: 100%;
   }
+
+  div.footer > a.footerlink { font-size: 30px; }
+}
+
+@media (min-width: 1200px) {
+  
+  .rsvptext {
+    width: 73%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  form div button.rsvpbutton {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+  }
+  
+
 }

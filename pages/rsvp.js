@@ -6,7 +6,10 @@ import MyForm from '.././components/rsvpform';
 import Navigation from '.././components/navigation';
 import DesktopNav from '.././components/desktopnav'
 import Image from 'next/image'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { 
+  faGrinAlt
+} from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Registry() {
@@ -17,7 +20,7 @@ export default function Registry() {
                 <title>Confirmar a sua presenca</title>
                     <link rel="icon" href="/favicon.ico" />
             </Head>
-            
+
         <main className={styles.main}>
           <Navigation />
             <h1 className={styles.title}>Antonia<br />&<br />Clark</h1>
@@ -32,7 +35,7 @@ export default function Registry() {
               <Image src="/images/rsvp.jpg" alt="rsvp" width="400" height="300" />
               </div>
             <div className={styles.rsvptext}>
-              <p className={styles.guesttext}>Aqui podera confirmar tua presenca na festa! Mal podemos esperar :)</p>
+              <p className={styles.guesttext}>Aqui pode confirmar tua presenca na festa! <FontAwesomeIcon icon={faGrinAlt} /></p>
               <MyForm />
             </div>
             </div>

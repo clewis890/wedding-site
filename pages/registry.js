@@ -31,18 +31,9 @@ export default function Registry() {
           <h3 className={styles.registrytitle}>Registry</h3>
             <p className={styles.casal}>Sua presença no nosso casamento é o melhor presente que poderíamos receber! Sabemos que alguns de vocês gostariam de contribuir com algo mais! Desde já agradecemos!
             </p>
-            <div id="paypal-button-container"></div>
-                <a src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></a>
             </div>
         <div className={styles.registrypicture}>
           <Image src="/images/wedding-gift.jpg" alt="Wedding picture" width="400" height="250" />
-          <form action="https://www.paypal.com/donate" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_donations" />
-                <input type="hidden" name="business" value="ZZ88DYPHBE3KY" />
-                <input type="hidden" name="currency_code" value="USD" />
-                <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="Contribuir para o inicio de vida de Antonia e Clark nos Estados Unidos" alt="Faça doações com o botão do PayPal" />
-                    <img alt="" border="0" src="https://www.paypal.com/pt_BR/i/scr/pixel.gif" width="1" height="1" />
-            </form>          
         </div>
         </div>
         </div>

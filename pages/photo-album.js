@@ -28,7 +28,7 @@ import Image from 'next/image'
         <div className={styles.photocard}>
         <div className={styles.welcometext}>
           <h3 className={styles.phototitle}>Photo Album</h3>
-            <p className={styles.casal}>Aqui sao algumas fotos do casal</p>
+            <p className={styles.phototext}>Aqui sao algumas fotos do casal</p>
         </div>
         <div className={styles.photoalbum}>
         <div className={styles.albumpic}>
