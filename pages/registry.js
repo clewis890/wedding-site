@@ -35,7 +35,7 @@ export default function Registry() {
                 <a src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></a>
             </div>
         <div className={styles.registrypicture}>
-          <Image src="/../public/images/wedding-gift.jpg" alt="Wedding picture" width="400" height="250" />
+          <Image src="/.wedding-gift.jpg" alt="Wedding picture" width="400" height="250" />
           <form action="https://www.paypal.com/donate" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_donations" />
                 <input type="hidden" name="business" value="ZZ88DYPHBE3KY" />

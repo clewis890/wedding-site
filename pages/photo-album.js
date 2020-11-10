@@ -32,22 +32,22 @@ import Image from 'next/image'
         </div>
         <div className={styles.photoalbum}>
         <div className={styles.albumpic}>
-          <Image src="/../public/images/antoniaclark1.jpg" alt="Antonia and Clark" width="250" height="350" />
+          <Image src="/images/antoniaclark1.jpg" alt="Antonia and Clark" width="250" height="350" />
         </div>
         <div className={styles.albumpic}>
-          <Image src="/../public/images/antoniaclark2.jpg" alt="Antonia and Clark" width="250" height="350" />
+          <Image src="/images/antoniaclark2.jpg" alt="Antonia and Clark" width="250" height="350" />
         </div>
         <div className={styles.albumpic}>
-          <Image src="/../public/images/antoniaclark3.jpg" alt="Antonia and Clark" width="250" height="350" />
+          <Image src="/images/antoniaclark3.jpg" alt="Antonia and Clark" width="250" height="350" />
         </div>
         <div className={styles.albumpic}>
-          <Image src="/../public/images/antoniaclark4.webp" alt="Antonia and Clark" width="250" height="350" />
+          <Image src="/images/antoniaclark4.webp" alt="Antonia and Clark" width="250" height="350" />
         </div>
         <div className={styles.albumpic}>
-          <Image src="/../public/images/antoniaclark6.jpg" alt="Antonia and Clark" width="250" height="350" />
+          <Image src="/images/antoniaclark6.jpg" alt="Antonia and Clark" width="250" height="350" />
         </div>
         <div className={styles.albumpic}>
-          <Image src="/../public/images/antoniaclark7.jpg" alt="Antonia and Clark" width="250" height="350" />
+          <Image src="/images/antoniaclark7.jpg" alt="Antonia and Clark" width="250" height="350" />
         </div>
         </div>
         </div>
