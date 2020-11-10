@@ -6,8 +6,6 @@ import Navigation from '.././components/navigation';
 import DesktopNav from '.././components/desktopnav';
 import DisqusComments from '.././components/Blog';
 
-import Image from 'next/image';
-
 export default function GuestBook() {
     return (
         <>
@@ -27,7 +25,7 @@ export default function GuestBook() {
   <div className={styles.grid}>
         <div className={styles.guestbookcard}>
         <div className={styles.welcometext}>
-          <h3>Guestbook</h3>
+          <h3 className={styles.guestbook}>Guestbook</h3>
           <p>Aqui pode deixar uma mensagem para nos se quiser!</p>
           </div>
           <DisqusComments />

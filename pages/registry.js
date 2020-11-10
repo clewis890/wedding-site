@@ -28,7 +28,7 @@ export default function Registry() {
         <div className={styles.grid}>
         <div className={styles.registrycard}>
         <div className={styles.welcometext}>
-          <h3>Registry</h3>
+          <h3 className={styles.registrytitle}>Registry</h3>
             <p className={styles.casal}>Sua presença no nosso casamento é o melhor presente que poderíamos receber! Sabemos que alguns de vocês gostariam de contribuir com algo mais! Desde já agradecemos!
             </p>
             <div id="paypal-button-container"></div>

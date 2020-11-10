@@ -17,7 +17,7 @@ export default function Registry() {
                 <title>Confirmar a sua presenca</title>
                     <link rel="icon" href="/favicon.ico" />
             </Head>
-
+            
         <main className={styles.main}>
           <Navigation />
             <h1 className={styles.title}>Antonia<br />&<br />Clark</h1>

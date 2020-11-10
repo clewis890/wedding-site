@@ -28,14 +28,14 @@ import Image from 'next/image'
           <Image src="/images/antoniaclark4.webp" alt="Antonia and Clark" width="250" height="350" />
         </div>
         <div className={styles.welcometext}>
-          <h3>Bem-vindos</h3>
+          <h3 className={styles.welcome}>Bem-vindos</h3>
             <p className={styles.casal}>Um americano que adora mate e uma brasileira que ama falar ingles. Assim que nos conhecemos e a vontade de ficarmos juntos foi tão grande que nem a pandemia pode nos parar! Vocês são nossos convidados especiais para celebrar o começo do resto das nossas vidas!</p>
         </div>
         </div>
 
           <div className={styles.card}>
             <h3>Noticias</h3>
-            <p className={styles.casal}>Colocamos algumas fotos da gente aqui no site, aqui tu pode confirmar tua presenca na festa, entre outras coisas. Obrigado por visitar nosso site e aguardamos tua presenca em Dezembro :)</p>
+            <p className={styles.casal}>Aqui colocamos algumas informacoes e coisas para preparar para o casamento, como fotos de nos, podem deixar mensagens aqui mesmo no site, e aonde podem confirmar a sua presenca no casamento, para que nos curtimos esse momento maravilhoso juntos!</p>
           </div>
           </div>
       </main> 
