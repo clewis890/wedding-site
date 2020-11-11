@@ -239,6 +239,8 @@
   -o-transition: color 0.15s ease, border-color 0.15s ease;
 }
 
+b.blogdate { margin-bottom: 30px; }
+
 /** Registry Page **/
 
 .registrycard {
@@ -319,10 +321,10 @@ h3.registrytitle { font-size: 30px; }
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .photocard {
@@ -391,7 +393,10 @@ h3.registrytitle { font-size: 30px; }
 }
 
 .welcome { font-size: 30px; }
-p.casal { font-size: 18px; }
+p.casal { 
+  margin-top: 20px;
+  font-size: 18px;
+}
 div.newsbox>p.casal { font-size: 18px; }
 .guest { line-height: 2rem; }
 

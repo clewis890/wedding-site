@@ -36,7 +36,7 @@ import Image from 'next/image'
           <div className={styles.card}>
             <h3 className={styles.welcome}>Noticias</h3>
             <div className={styles.newsbox}>
-              <b>10-11-2020</b>
+              <b className={styles.blogdate}>10-11-2020</b>
             <p className={styles.casal}>Aqui colocamos algumas informacoes e coisas para preparar para o casamento, como fotos de nos, podem deixar mensagens aqui mesmo no site, e aonde podem confirmar a sua presenca no casamento, para que nos curtimos esse momento maravilhoso juntos!</p>
           </div>
           </div>
