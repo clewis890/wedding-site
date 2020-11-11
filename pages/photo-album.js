@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Countdown from '.././components/Countdown';
 import Navigation from '.././components/navigation';
 import DesktopNav from '.././components/desktopnav'
+import Footer from '.././components/Footer';
 
 import Image from 'next/image'
 
@@ -54,13 +55,7 @@ import Image from 'next/image'
         </div>
       </main>
 
-      <footer className={styles.footer}>
-      <Link href="/"><a className={styles.footerlink}>Home</a></Link>
-          <Link href="/registry"><a className={styles.footerlink}>Registry</a></Link>
-          <Link href="/guest-book"><a className={styles.footerlink}>Guest Book</a></Link>
-          <Link href="/photo-album"><a className={styles.footerlink}>Photo Album</a></Link>
-          <Link href="/rsvp"><a className={styles.footerlink}>RSVP</a></Link>
-      </footer>
+      <Footer />
     </div>
     </>
   )

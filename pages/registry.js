@@ -38,7 +38,6 @@ export default function Registry() {
       </main>
 
      <Footer />
-    
     </div>
     </>
   )
