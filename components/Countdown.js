@@ -1,7 +1,6 @@
 import {useState, useEffect} from 'react';
 import styles from '../styles/Home.module.css'
 
-
 const Countdown = () => {
   const [countdownDate, setCountdownDate] = useState(new Date('12/12/2020').getTime());
   const [state, setState] = useState({
@@ -53,19 +52,19 @@ const Countdown = () => {
     <div>
       <div className={styles.countdownWrapper}>
         <div className='time-section'>
-          <div className={styles.time}>{state.days || '0'} <span className={styles.time2}>Days</span></div>
+          <div className={styles.time}>{state.days || '0'} <span className={styles.time2}>Dias</span></div>
         </div>
         <div className='time-section'>
           <div className='time'></div>
         </div>
         <div className='time-section'>
-          <div className={styles.time}>{state.hours || '00'} <span className={styles.time2}>Hours</span></div>
+          <div className={styles.time}>{state.hours || '00'} <span className={styles.time2}>Horas</span></div>
         </div>
         <div className='time-section'>
           <div className='time'></div>
         </div>
         <div className='time-section'>
-          <div className={styles.time}>{state.minutes || '00'} <span className={styles.time2}>Minutes</span></div>
+          <div className={styles.time}>{state.minutes || '00'} <span className={styles.time2}>Minutos</span></div>
         </div>
         <div className='time-section'>
           <div className='time'></div>

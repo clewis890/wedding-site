@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from '../styles/Home.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGlassCheers } from "@fortawesome/free-solid-svg-icons";
 
 export default class MyForm extends React.Component {
   constructor(props) {
@@ -20,22 +22,22 @@ export default class MyForm extends React.Component {
           className={styles.form}>
               <div>
             <label className={styles.label}>Nome: *</label>
-            <input type="text" name="name" className={styles.input} maxlength="20" required />
+            <input type="text" name="name" className={styles.input} maxLength="20" required />
             </div>
             <div>
             <label className={styles.label}>Sobrenome: *</label>
-            <input type="text" name="lastname" className={styles.input} maxlength="40" required />
+            <input type="text" name="lastname" className={styles.input} maxLength="40" required />
             </div>
             <div>
           <label className={styles.label}>Email: *</label>
           <input type="email" name="email" className={styles.input} required />
           </div>
            <div className={styles.label}>
-              <label htnmlFor="plusone">Acompanhante(s)?</label>
-              <select className={styles.input} id="plusone" name="plusone" required>
-                <option className={styles.option} value="" selected disabled hidden>Escolha aqui</option>
-                <option className={styles.option} value="no">Nao</option>
-                <option className={styles.option} value="yes">Sim</option>
+              <label htnmlfor="plusone">Acompanhante(s)?</label>
+              <select className={styles.input} id="plusone" name="plusone" defaultValue="selectplusone" required>
+                <option className={styles.option} defaultValue="" selected disabled hidden>Escolha aqui</option>
+                <option className={styles.option} defaultValue="no">Nao</option>
+                <option className={styles.option} defaultValue="yes">Sim</option>
                </select>
                <div>
               </div>
@@ -43,11 +45,11 @@ export default class MyForm extends React.Component {
                <input type="text" name="name" className={styles.input} />
            </div>
            <div className={styles.label}>
-                 <label htnmlFor="plusone">Acompanhante?</label>
-                  <select className={styles.input} id="plusone" name="plusone">
-                    <option className={styles.option} value="" selected disabled hidden>Escolha aqui</option>
-                    <option className={styles.option} value="no">Nao</option>
-                    <option className={styles.option} value="yes">Sim</option>
+                 <label htnmlfor="plusone">Acompanhante?</label>
+                  <select className={styles.input} id="plusone" name="plusone" defaultValue="selectplusone">
+                    <option className={styles.option} defaultValue="" selected disabled hidden>Escolha aqui</option>
+                    <option className={styles.option} defaultValue="no">Nao</option>
+                    <option className={styles.option} defaultValue="yes">Sim</option>
                   </select>
                   </div>
           <div>
@@ -57,7 +59,7 @@ export default class MyForm extends React.Component {
           </textarea>
           </div>
           </div>
-          {status === "SUCCESS" ? <p>Obrigado! Ficamos feliz de te ter no nosso dia especial :)</p> : <button className={styles.rsvpbutton}>Submit</button>}
+          {status === "SUCCESS" ? <p>Obrigado! Ficamos feliz de te ter no nosso dia especial <FontAwesomeIcon icon={faGlassCheers} /></p> : <button className={styles.rsvpbutton}>Confirmar</button>}
           {status === "ERROR" && <p>Ops! Certifique-se de completar o formulario</p>}
         </form>
       );

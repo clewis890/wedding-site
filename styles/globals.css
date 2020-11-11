@@ -11,20 +11,14 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-  /* font-family: "Oswald", Arial, sans-serif; */
-
-}
+* {  box-sizing: border-box; }
 
 h1, h2, h3 {
   font-family: 'Parisienne', cursive;
   font-size: 28px;
 }
 
-p {
-  font-family: 'Work Sans', sans-serif;
-}
+p, label { font-family: 'Work Sans', sans-serif; }
 
 .card, .card1, .guesbookcard, .rsvpcard, .registrycard, .photocard {
   background-color: #eaeaea;

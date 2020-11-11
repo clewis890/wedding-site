@@ -28,7 +28,7 @@ import Image from 'next/image'
           <Image src="/images/antoniaclark4.webp" alt="Antonia and Clark" width="250" height="350" />
         </div>
         <div className={styles.welcometext}>
-          <h3 className={styles.welcome}>Bem-vindos</h3>
+          <h3 className={styles.welcome}>Bem-Vindos</h3>
             <p className={styles.casal}>Um americano que adora mate e uma brasileira que ama falar ingles. Assim que nos conhecemos e a vontade de ficarmos juntos foi tão grande que nem a pandemia pode nos parar! Vocês são nossos convidados especiais para celebrar o começo do resto das nossas vidas!</p>
         </div>
         </div>

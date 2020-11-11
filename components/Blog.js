@@ -3,7 +3,7 @@ const DisqusComments = () => {
   const disqusShortname = "antoniaeclark-com"
   const disqusConfig = {
     url: "https://antoniaeclark.com/",
-  }
+  };
   return (
     <div>
       <DiscussionEmbed
@@ -13,4 +13,5 @@ const DisqusComments = () => {
     </div>
   )
 }
+
 export default DisqusComments;
