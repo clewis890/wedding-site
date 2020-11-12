@@ -11,7 +11,7 @@ export default function Footer() {
             <Link href="/photo-album"><a className={styles.footerlink}><p>Album de Fotos</p></a></Link>
             <Link href="/rsvp"><a className={styles.footerlink}><p>Confirmar Presença</p></a></Link>
             <div className={styles.copyright}>
-                <p>Copyright Clark Lewis Web Development 2020 &copy;</p>
+                <p>Copyright &copy; Clark Lewis Web Development 2020</p>
             </div>
         </footer>
         </>

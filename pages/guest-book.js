@@ -1,10 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import Link from 'next/link';
-import Countdown from '../components/Countdown';
-import Navigation from '.././components/navigation';
-import DesktopNav from '.././components/desktopnav';
 import DisqusComments from '.././components/Blog';
+import Header from '.././components/Header'
 import Footer from '.././components/Footer';
 
 export default function GuestBook() {
@@ -12,17 +9,12 @@ export default function GuestBook() {
         <>
         <div className={styles.container}>
             <Head>
-                <title>We're getting married! Antonia and Clark</title>
+                <title>Livro de Visitas</title>
                     <link rel="icon" href="/favicon.ico" />
             </Head>
 
         <main className={styles.main}>
-          <Navigation />
-            <h1 className={styles.title}>Antonia<br/>&<br />Clark</h1>
-                <div className={styles.countdownBox}>
-                <Countdown className={styles.time}/>
-                </div>
-      <DesktopNav />
+          <Header />
   <div className={styles.grid}>
         <div className={styles.guestbookcard}>
         <div className={styles.guestbooktext}>

@@ -1,10 +1,8 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Footer from '.././components/Footer';
-import Countdown from '.././components/Countdown';
 import MyForm from '.././components/rsvpform';
-import Navigation from '.././components/navigation';
-import DesktopNav from '.././components/desktopnav';
+import Header from '.././components/Header'
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
@@ -17,21 +15,16 @@ export default function Registry() {
         <>
         <div className={styles.container}>
             <Head>
-                <title>Confirmar a sua presença</title>
+                <title>Confirmar a sua Presença - Antonia e Clark</title>
                     <link rel="icon" href="/favicon.ico" />
             </Head>
 
         <main className={styles.main}>
-          <Navigation />
-            <h1 className={styles.title}>Antonia<br />&<br />Clark</h1>
-                <div className={styles.countdownBox}>
-                  <Countdown className={styles.time}/>
-                </div>
-          <DesktopNav />
+         <Header />
           <div className={styles.grid}>
             <div className={styles.rsvpcard}>
               <div className={styles.welcometext}>
-              <h3 className={styles.rsvptitle}>Confirmar Presença</h3>
+              <h3 className={styles.rsvptitle}>Confirme sua Presença</h3>
               </div>
                 <div className={styles.rsvppicture}>
                   <Image src="/images/rsvp.jpg" alt="rsvp" width="400" height="250" />

@@ -1,9 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Link from 'next/link';
-import Countdown from '.././components/Countdown';
-import Navigation from '.././components/navigation';
-import DesktopNav from '.././components/desktopnav'
+import Header from '.././components/Header';
 import Footer from '.././components/Footer';
 import Image from 'next/image'
 
@@ -17,12 +14,7 @@ import Image from 'next/image'
       </Head>
 
       <main className={styles.main}>
-      <Navigation />        
-        <h1 className={styles.title}>Antonia<br/>&<br />Clark</h1>
-      <div className={styles.countdownBox}>
-        <Countdown className={styles.time}/>
-      </div>
-      <DesktopNav />        
+        <Header />
         <div className={styles.grid}>
         <div className={styles.card1}>
         <div className={styles.picture}>
@@ -38,7 +30,7 @@ import Image from 'next/image'
             <h3 className={styles.welcome}>Noticias</h3>
             <div className={styles.newsbox}>
               <b className={styles.blogdate}>10-11-2020</b>
-            <p className={styles.casal}>Aqui colocamos algumas informacoes e coisas para preparar para o casamento, como fotos de nos, podem deixar mensagens aqui mesmo no site, e aonde podem confirmar a sua presenca no casamento, para que nos curtimos esse momento maravilhoso juntos!</p>
+            <p className={styles.casal}>Aqui colocaremos algumas informaçoes e detalhes sobre o casamento. Alem de poderem acompanhar alguns momentos nossos, podem deixar mensagens aqui e confirmar a sua presenca para que possamos curtir esse momento maravilhoso juntos!</p>
           </div>
           </div>
           </div>

@@ -79,8 +79,8 @@
   left: 0;
   margin: auto;
   padding: 0.5em;
-  background-color: #cda990fb;
-  box-shadow: 3px 2px 8px 3px #a38774;
+  background-color: #cda990;
+  box-shadow: 3px 3px 6px 3px #a38774;
   width: 100%;
   overflow: hidden;
 }
@@ -122,6 +122,12 @@
 
 .title,
 .description { text-align: center; } 
+
+.title span {
+  font-family: fantasy;
+  font-weight: 400;
+  font-size: 30px; 
+}
 
 .countdownWrapper {
   font-size: 20px;
@@ -405,6 +411,11 @@ h3.guestbook {
   font-size: 35px;
 }
 
+.photoblog { 
+  margin: 2rem auto;
+  width: 80%;
+}
+
 .form { 
   padding: 2px;
   margin-bottom: 2rem;
@@ -491,6 +502,7 @@ div.label {
 }
 
 .messagebox {
+  border: none;
   display: inline-block;
   width: 10rem;
 }
@@ -514,7 +526,7 @@ option.option {
 }
 
 .copyright {
-  color: #fff;
+  color: rgb(199, 199, 199);
   display: flex;  
   cursor: default;
   font-size: 12px;

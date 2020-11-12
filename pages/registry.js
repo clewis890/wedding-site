@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
-import Countdown from '.././components/Countdown';
-import Navigation from '.././components/navigation';
-import DesktopNav from '.././components/desktopnav'
+import Header from '.././components/Header'
+
 import Footer from '.././components/Footer';
 import Image from 'next/image';
 
@@ -12,18 +11,13 @@ export default function Registry() {
         <>
         <div className={styles.container}>
             <Head>
-                <title>We're getting married! Antonia and Clark</title>
+                <title>Lista de Casamento</title>
                     <link rel="icon" href="/favicon.ico" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
 
         <main className={styles.main}>
-          <Navigation />
-            <h1 className={styles.title}>Antonia<br />&<br />Clark</h1>
-              <div className={styles.countdownBox}>
-                <Countdown className={styles.time}/>
-              </div>
-          <DesktopNav />
+          <Header />
         <div className={styles.grid}>
           <div className={styles.registrycard}>
             <div className={styles.welcometext}>
