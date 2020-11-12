@@ -196,13 +196,6 @@
   margin-top: 3rem;
 }
 
-
-.card:hover,
-.card:focus,
-.card:active {
-  
-}
-
 /*** Home Page ***/
 
 .card1 {
@@ -303,7 +296,6 @@ h3.registrytitle { font-size: 30px; }
 /** Guestbook Page */
 
 .guestbookcard {
-
   background-color: #eaeaea;
   margin: 2rem auto 3rem auto;
   flex-basis: 75%;
@@ -394,6 +386,7 @@ h3.registrytitle { font-size: 30px; }
 }
 
 .guesttext { 
+  font-size: 18px;
   flex-basis: 45%;
   width: 80%;
   margin: 1rem auto;
@@ -427,6 +420,7 @@ p.casal {
   margin-top: 20px;
   font-size: 18px;
 }
+
 div.newsbox>p.casal { font-size: 18px; }
 .guest { line-height: 2rem; }
 
@@ -540,7 +534,7 @@ option.option {
 
 .footer {
   width: 100%;
-  height: 200px;
+  height: 170px;
   font-size: 13px;
   border-top: 1px solid #eaeaea;
   display: flex;
@@ -559,7 +553,7 @@ option.option {
 .footerlink {
   margin-bottom: 0;
   color: #eaeaea;
-  margin-right: 5px;
+  margin-right: 8px;
   text-align: center;
 }
 
@@ -569,16 +563,14 @@ option.option {
     border: 0;
     color: #eaeaea;
     transition: color 0.3s;
-    -webkit-transition: color 0.3s;
-    -moz-transition: color 0.3s;
-    -ms-transition: color 0.3s;
-    -o-transition: color 0.3s;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
 
 .footerlink:hover,
-.footerlink:active { 
-  color: #cda990;
-}
+.footerlink:active { color: #cda990; }
 
 @media only screen and (min-height: 375px) and (max-width: 812px){
   .rsvpcard { flex-direction: column; }
@@ -687,16 +679,13 @@ option.option {
       background-color: #f1f0f0;
       align-items: flex-start;
       border-radius: 15px;
-      -webkit-border-radius: 15px;
-      -moz-border-radius: 15px;
-      -ms-border-radius: 15px;
-      -o-border-radius: 15px;
+      -webkit-border-radius:;
+      -moz-border-radius:;
+      -ms-border-radius:;
+      -o-border-radius:;
     }
 
-    a.photolink { 
-      position: relative;
-   }
-
+    a.photolink { position: relative; }
     .rsvpcard { width: 100%; }
     
     .registrycard {
@@ -716,12 +705,14 @@ option.option {
       margin-top: 1em;
       font-size: 35px;
      }
-     h3.welcome { font-size: 35px; }
-     h3.phototitle { font-size: 35px; }
-     h3.registrytitle { 
+
+    h3.welcome { font-size: 35px; }
+    h3.phototitle { font-size: 35px; }
+    h3.registrytitle { 
        margin-top: 1em;
        font-size: 35px;
-       }
+    }
+
     .photocard {
       width: 100%;
       margin: 1em auto 3rem auto;
@@ -734,7 +725,7 @@ option.option {
       width: 100%;
     }
     
-    .footerlink p { font-size: 17px;}
+    .footerlink p { font-size: 16px;}
     .albumpic:last-child { margin-bottom: 2rem;}
     .copyright { font-size: 14px; }
     .footer:last-child { flex-wrap: wrap; }
@@ -743,7 +734,6 @@ option.option {
 @media (min-width: 768px) {
 
   .mobilenav { padding: 0.4em; }
-
   .card1 { padding: 0 1rem 1rem 1rem; }
   .newswelcome { 
     text-align: left;
@@ -756,7 +746,7 @@ option.option {
     width: 100%;
     flex-basis: 85%;
     padding: 0 2rem 2rem 2rem;
-}
+  }
 
   .guestbooktext { margin-bottom: 3rem; }
 
@@ -806,9 +796,7 @@ option.option {
     margin: 0 auto;
   }
 
-  h3.phototitle {
-    font-size: 35px;
-  }
+  h3.phototitle { font-size: 35px; }
 
   .photoalbum {
     display: inline-flex;
@@ -822,7 +810,7 @@ option.option {
     width: 50%;
     margin-bottom: 3%;
   }
-
+  .footer { height: 150px; }
   a.footerlink { font-size: 24px; }
   .copyright { font-size: 16px; }
 }
@@ -861,9 +849,7 @@ option.option {
     flex-direction: column;
     padding: 0.8em;
   }
-  .rsvptext {
-    width: 100%;
-}
+  .rsvptext { width: 100%; }
 
   .form { width: 70%; }
   .textbox { max-width: 400px; }
@@ -877,14 +863,14 @@ option.option {
     width: 100%;
   }
 
-  .footer { flex-wrap: wrap; }
   .footerlink p { 
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 10px; 
   }
   .copyright {
     line-break: normal;
     font-size: 16px;
+    margin: auto 10em;
    }
 
 }
@@ -904,13 +890,8 @@ option.option {
     margin: auto;
   }
 
-  .input {
-    margin-top: 5px;
-  }
+  .input { margin-top: 5px; }
   
-  .textbox { 
-    max-width: 26rem;
-   }
-  
-
+  .textbox { max-width: 26rem; }
+   
 }

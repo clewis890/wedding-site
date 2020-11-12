@@ -24,7 +24,7 @@ import DisqusComments from '.././components/Blog'
         <div className={styles.photocard}>
         <div className={styles.welcometext}>
           <h3 className={styles.phototitle}>Album de Fotos</h3>
-            <p className={styles.phototext}>Aqui sao algumas fotos do casal</p>
+            <p className={styles.phototext}>Selecionamos alguns dos nossos momentos preferidos para compartilhar com vocês</p>
         </div>
         <div className={styles.photoalbum}>
         <div className={styles.albumpic}>

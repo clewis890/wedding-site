@@ -26,14 +26,14 @@ import Image from 'next/image'
               </div>
               <div className={styles.welcometext}>
                 <h3 className={styles.welcome}>Bem-Vindos</h3>
-                  <p className={styles.casal}>Um americano que adora mate e uma brasileira que ama falar ingles. Assim que nos conhecemos e a vontade de ficarmos juntos foi tão grande que nem a pandemia pode nos parar! Vocês são nossos convidados especiais para celebrar o começo do resto das nossas vidas!</p>
+                  <p className={styles.casal}>Um americano que adora mate e uma brasileira que ama falar inglês. Foi assim que nos conhecemos e a vontade de ficarmos juntos era tão grande que nem a pandemia pode nos parar! Vocês são nossos convidados especiais para celebrar o começo do resto das nossas vidas!</p>
               </div>
             </div>
             <div className={styles.card}>
               <h3 className={styles.newswelcome}>Noticias</h3>
                 <div className={styles.newsbox}>
                   <b className={styles.blogdate}>10-11-2020</b>
-                  <p className={styles.casal}>Aqui colocaremos algumas informaçoes e detalhes sobre o casamento. Alem de poderem acompanhar alguns momentos nossos, podem deixar mensagens aqui e confirmar a sua presenca para que possamos curtir esse momento maravilhoso juntos!</p>
+                  <p className={styles.casal}>Aqui colocaremos algumas informações e detalhes sobre o casamento. Além de poderem acompanhar alguns momentos nossos, pode deixar sua mensagem aqui e confirmar a sua presença para que possamos curtir esse momento maravilhoso juntos!</p>
                   <b className={styles.blogdate}>11-11-2020</b>
                   <p className={styles.casal}>Clark adicionou uma foto ao Album de Fotos. Clique na imagem em baixo para ver!</p>
                     <div className={styles.newsphotobox}>

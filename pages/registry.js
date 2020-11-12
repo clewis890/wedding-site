@@ -25,7 +25,7 @@ export default function Registry() {
           <div className={styles.registrycard}>
             <div className={styles.welcometext}>
               <h3 className={styles.registrytitle}>Lista de Casamento</h3>
-                <p className={styles.registrytext}>Sua presença no nosso casamento é o melhor presente que poderíamos receber! Sabemos que alguns de vocês gostariam de contribuir com algo mais! Desde já agradecemos!</p>
+                <p className={styles.registrytext}>Sua presença no nosso casamento é o melhor presente que poderíamos receber! Mas para quem quiser contribuir com nosso começo na America esta plataforma foi o melhor meio que encontramos. Já estamos com os corações cheios de gratidão!</p>
             </div>
             <div className={styles.registrypicture}>
               <Image src="/images/wedding-gift.jpg" alt="Wedding picture" width="400" height="250" />
