@@ -19,7 +19,7 @@ export default function GuestBook() {
         <div className={styles.guestbookcard}>
         <div className={styles.guestbooktext}>
           <h3 className={styles.guestbook}>Livro de Visitas</h3>
-          <p className={styles.casal}>Aqui pode deixar uma mensagem para nos!</p>
+          <p className={styles.casal}>Aqui voce pode deixar uma mensagem para os noivos!</p>
           </div>
           <DisqusComments />
         </div>

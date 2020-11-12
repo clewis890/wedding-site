@@ -42,6 +42,12 @@ import DisqusComments from '.././components/Blog'
         <div className={styles.albumpic}>
           <Image src="/images/antoniaclark7.jpg" alt="Antonia and Clark" width="250" height="350" />
         </div>
+        {/* <div className={styles.albumpic}>
+          <Image src="/images/antoniaclark8.jpeg" alt="Antonia and Clark" width="400" height="450" />
+        </div> */}
+        <div className={styles.albumpic}>
+          <Image src="/images/antoniaclark9.jpeg" alt="Antonia and Clark" width="250" height="350" />
+        </div>
         </div>
         <div className={styles.photoblog}>
         <DisqusComments />
