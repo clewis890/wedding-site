@@ -19,19 +19,19 @@ export default function GuestBook() {
 
         <main className={styles.main}>
           <Header />
-  <div className={styles.grid}>
-        <div className={styles.guestbookcard}>
-        <div className={styles.guestbooktext}>
-          <h3 className={styles.guestbook}>Livro de Visitas</h3>
-          <p className={styles.casal}>Aqui voce pode deixar uma mensagem para os noivos!</p>
-          </div>
-          <DisqusComments />
-        </div>
-        </div>
-      </main>
+            <div className={styles.grid}>
+              <div className={styles.guestbookcard}>
+                <div className={styles.guestbooktext}>
+                  <h3 className={styles.guestbook}>Livro de Visitas</h3>
+                    <p className={styles.casal}>Aqui voce pode deixar uma mensagem para os noivos!</p>
+                </div>
+                <DisqusComments />
+              </div>
+            </div>
+        </main>
 
-     <Footer />
-    </div>
-    </>
-  )
+        <Footer />
+        </div>
+        </>
+    )
 }

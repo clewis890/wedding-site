@@ -141,13 +141,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  border-radius: 15px;
+  border-radius: 30px;
   box-shadow: 1px 1px 6px 2px #cda990bb;
   background-color: #cda990e3;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 
 .time {

@@ -2,12 +2,10 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Footer from '.././components/Footer';
 import MyForm from '.././components/rsvpform';
-import Header from '.././components/Header'
+import Header from '.././components/Header';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faGrinAlt
-} from "@fortawesome/free-solid-svg-icons";
+import { faGrinAlt } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Registry() {
