@@ -30,15 +30,15 @@ import Image from 'next/image'
               </div>
             </div>
             <div className={styles.card}>
-              <h3 className={styles.welcome}>Noticias</h3>
+              <h3 className={styles.newswelcome}>Noticias</h3>
                 <div className={styles.newsbox}>
                   <b className={styles.blogdate}>10-11-2020</b>
-                    <p className={styles.casal}>Aqui colocaremos algumas informaçoes e detalhes sobre o casamento. Alem de poderem acompanhar alguns momentos nossos, podem deixar mensagens aqui e confirmar a sua presenca para que possamos curtir esse momento maravilhoso juntos!</p>
+                  <p className={styles.casal}>Aqui colocaremos algumas informaçoes e detalhes sobre o casamento. Alem de poderem acompanhar alguns momentos nossos, podem deixar mensagens aqui e confirmar a sua presenca para que possamos curtir esse momento maravilhoso juntos!</p>
                   <b className={styles.blogdate}>11-11-2020</b>
-                    <p className={styles.casal}>Clark adicionou uma foto ao Album de Fotos. Clique na imagem em baixo para ver!</p>
-                      <div className={styles.newsphotobox}>
-                        <Link href="/photo-album"><a className={styles.photolink}><Image className={styles.newspicture} src="/images/antoniaclark9.jpeg" alt="Antonia and Clark" width="130" height="200" /></a></Link>
-                      </div>
+                  <p className={styles.casal}>Clark adicionou uma foto ao Album de Fotos. Clique na imagem em baixo para ver!</p>
+                    <div className={styles.newsphotobox}>
+                      <Link href="/photo-album"><a className={styles.photolink}><Image className={styles.newspicture} src="/images/antoniaclark9.jpeg" alt="Antonia and Clark" width="130" height="200" /></a></Link>
+                    </div>
                 </div>
             </div>
           </div>

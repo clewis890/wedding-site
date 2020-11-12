@@ -28,14 +28,14 @@ export default function Registry() {
           <div className={styles.grid}>
             <div className={styles.rsvpcard}>
               <div className={styles.welcometext}>
-              <h3 className={styles.rsvptitle}>Confirme sua Presença</h3>
+                <h3 className={styles.rsvptitle}>Confirme sua Presença</h3>
               </div>
-                <div className={styles.rsvppicture}>
-                  <Image src="/images/rsvp.jpg" alt="rsvp" width="400" height="250" />
-                </div>
+              <div className={styles.rsvppicture}>
+                <Image src="/images/rsvp.jpg" alt="rsvp" width="400" height="250" />
+              </div>
                 <span className={styles.rsvptext}>
                   <p className={styles.guesttext}>Aqui pode confirmar tua presença na festa! <FontAwesomeIcon icon={faGrinAlt} /></p>
-              <MyForm />
+                <MyForm />
                 </span>
             </div>
           </div>
