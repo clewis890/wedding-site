@@ -245,7 +245,25 @@
   -o-transition: color 0.15s ease, border-color 0.15s ease;
 }
 
-b.blogdate { margin-bottom: 30px; }
+.newsbox { 
+  display: flex;
+  align-items: space-evenly;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ b.blogdate { margin-top: 20px; }
+
+ a.photolink {
+  width: inherit;
+  position: relative;
+  margin: 2rem auto auto auto;
+}
+
+.newsphotobox {
+  display: flex;
+  align-items: center;
+}
 
 /** Registry Page **/
 
@@ -657,6 +675,21 @@ option.option {
       display: flex;
       flex-direction: row;
     }
+
+    div.newsbox {
+      padding: 30px;
+      background-color: #f1f0f0;
+      align-items: flex-start;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+    }
+
+    a.photolink { 
+      position: relative;
+   }
 
     .rsvpcard { width: 100%; }
     
