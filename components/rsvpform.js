@@ -17,7 +17,7 @@ export default class MyForm extends React.Component {
       return (
         <form
           onSubmit={this.submitForm}
-          action="https://formspree.io/f/mybjojo"
+          action="https://formspree.io/f/myybjojo"
           method="POST"
           className={styles.form}>
               <div>
@@ -42,7 +42,7 @@ export default class MyForm extends React.Component {
            </div>
            <div className={styles.label}>
                  <label htnmlfor="plusone">Quantas pessoas?</label>
-                  <select className={styles.input} id="plusone" name="plusone" defaultValue="selectplusone">
+                  <select className={styles.input} id="plusone" name="plusone" value="selectplusone" required>
                     <option className={styles.option} defaultValue="" selected disabled hidden>Escolha aqui</option>
                     <option className={styles.option} defaultValue="1">1</option>
                     <option className={styles.option} defaultValue="2">2</option>
