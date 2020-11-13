@@ -17,7 +17,7 @@ export default class MyForm extends React.Component {
       return (
         <form
           onSubmit={this.submitForm}
-          action="https://formspree.io/f/mzbkgogw"
+          action="https://formspree.io/f/mybjojo"
           method="POST"
           className={styles.form}>
               <div>
