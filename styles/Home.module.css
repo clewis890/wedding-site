@@ -913,6 +913,7 @@ option.option {
     font-size: 120%;
   }
 
+  .venuecard { width: 100%; }
   .guesttext { text-align: center;}
   .rsvpcard {
     margin: 0 auto;
