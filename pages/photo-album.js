@@ -10,7 +10,7 @@ import DisqusComments from '.././components/Blog'
         <>
         <div className={styles.container}>
             <Head>
-                <title>Album de Fotos - Antonia e Clark</title>
+                <title>Álbum de Fotos - Antonia e Clark</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -23,7 +23,7 @@ import DisqusComments from '.././components/Blog'
             <div className={styles.grid}>
               <div className={styles.photocard}>
                 <div className={styles.welcometext}>
-                  <h3 className={styles.phototitle}>Album de Fotos</h3>
+                  <h3 className={styles.phototitle}>Álbum de Fotos</h3>
                     <p className={styles.phototext}>Selecionamos alguns dos nossos momentos preferidos para compartilhar com vocês</p>
                 </div>
                 <div className={styles.photoalbum}>
