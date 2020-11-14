@@ -28,6 +28,13 @@ import Image from 'next/image'
                 <h3 className={styles.welcome}>Bem-Vindos</h3>
                   <p className={styles.casal}>Um americano que adora mate e uma brasileira que ama falar inglês. Foi assim que nos conhecemos e a vontade de ficarmos juntos era tão grande que nem a pandemia pode nos parar! Vocês são nossos convidados especiais para celebrar o começo do resto das nossas vidas!</p>
               </div>
+              
+            </div>
+            <div className={styles.venuecard}>
+              <div className={styles.venue}>
+                  <h3 className={styles.venuetitle}>Sobre O Grande Dia</h3>
+                    <p className={styles.venueaddress}>Vai acontecer na D. Boat House que fica na Rua dos Pescadores, 1550 às 17 horas, o traje da ocasião é Alto Esporte e o mais importante pra nós é que todos se divirtam!</p>
+              </div>
             </div>
             <div className={styles.card}>
               <h3 className={styles.newswelcome}>Noticias</h3>
