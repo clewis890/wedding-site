@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Header from '.././components/Header'
 import Footer from '.././components/Footer';
@@ -25,7 +24,7 @@ export default function Registry() {
             <div className={styles.welcometext}>
               <h3 className={styles.registrytitle}>Lista de Casamento</h3>
                 <p className={styles.registrytext}>Sua presença no nosso casamento é o melhor presente que poderíamos receber! Mas para quem quiser contribuir com nosso começo na America esta plataforma foi o melhor meio que encontramos. Já estamos com os corações cheios de gratidão!</p>
-                <b className={styles.registrytext}>Para nossos amigos e familia brasileiros</b> 
+                <b className={styles.registrytext}>Para nossa familia e amigos brasileiros</b> 
                 <a href="https://antoniaeclark.zankyou.com/br/lista-casamento" className={styles.registrylink} noopener="true" target="_blank">Nossa lista se encontra aqui</a>
                 <b className={styles.registrytext}>For our American friends and family</b>
                 <a href="https://registry.theknot.com/antonia-abichequer-clark-lewis-december-2020-rs/43311778" className={styles.registrylink} noopener="true" target="_blank" type="hidden">Click here for our registry</a>

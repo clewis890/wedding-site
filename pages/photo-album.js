@@ -20,48 +20,44 @@ import DisqusComments from '.././components/Blog'
 
         <main className={styles.main}>
           <Header />
-  <div className={styles.grid}>
-        <div className={styles.photocard}>
-        <div className={styles.welcometext}>
-          <h3 className={styles.phototitle}>Album de Fotos</h3>
-            <p className={styles.phototext}>Selecionamos alguns dos nossos momentos preferidos para compartilhar com vocês</p>
-        </div>
-        <div className={styles.photoalbum}>
-        <div className={styles.albumpic}>
-          <Image src="/images/antoniaclark1.jpg" alt="Antonia and Clark" width="250" height="350" />
-        </div>
-        <div className={styles.albumpic}>
-          <Image src="/images/antoniaclark2.jpg" alt="Antonia and Clark" width="250" height="350" />
-        </div>
-        <div className={styles.albumpic}>
-          <Image src="/images/antoniaclark3.jpg" alt="Antonia and Clark" width="250" height="350" />
-        </div>
-        <div className={styles.albumpic}>
-          <Image src="/images/antoniaclark4.webp" alt="Antonia and Clark" width="250" height="350" />
-        </div>
-        <div className={styles.albumpic}>
-          <Image src="/images/antoniaclark6.jpg" alt="Antonia and Clark" width="250" height="350" />
-        </div>
-        <div className={styles.albumpic}>
-          <Image src="/images/antoniaclark7.jpg" alt="Antonia and Clark" width="250" height="350" />
-        </div>
-        {/* <div className={styles.albumpic}>
-          <Image src="/images/antoniaclark8.jpeg" alt="Antonia and Clark" width="400" height="450" />
-        </div> */}
-        <div className={styles.albumpic}>
-          <Image src="/images/antoniaclark9.jpeg" alt="Antonia and Clark" width="250" height="350" />
-        </div>
-        </div>
-        <div className={styles.photoblog}>
-        <DisqusComments />
-        </div>
+            <div className={styles.grid}>
+              <div className={styles.photocard}>
+                <div className={styles.welcometext}>
+                  <h3 className={styles.phototitle}>Album de Fotos</h3>
+                    <p className={styles.phototext}>Selecionamos alguns dos nossos momentos preferidos para compartilhar com vocês</p>
+                </div>
+                <div className={styles.photoalbum}>
+                  <div className={styles.albumpic}>
+                    <Image src="/images/antoniaclark1.jpg" alt="Antonia and Clark" width="250" height="350" />
+                  </div>
+                  <div className={styles.albumpic}>
+                    <Image src="/images/antoniaclark2.jpg" alt="Antonia and Clark" width="250" height="350" />
+                  </div>
+                  <div className={styles.albumpic}>
+                    <Image src="/images/antoniaclark3.jpg" alt="Antonia and Clark" width="250" height="350" />
+                  </div>
+                  <div className={styles.albumpic}>
+                    <Image src="/images/antoniaclark4.webp" alt="Antonia and Clark" width="250" height="350" />
+                  </div>
+                  <div className={styles.albumpic}>
+                    <Image src="/images/antoniaclark6.jpg" alt="Antonia and Clark" width="250" height="350" />
+                  </div>
+                  <div className={styles.albumpic}>
+                    <Image src="/images/antoniaclark7.jpg" alt="Antonia and Clark" width="250" height="350" />
+                  </div>
+                  <div className={styles.albumpic}>
+                    <Image src="/images/antoniaclark9.jpeg" alt="Antonia and Clark" width="250" height="350" />
+                  </div>
+                  </div>
+                  <div className={styles.photoblog}>
+                    <DisqusComments />
+                  </div>
 
+              </div>
+            </div>
+        </main>
+        <Footer />
         </div>
-        </div>
-      </main>
-
-      <Footer />
-    </div>
     </>
   )
 }
