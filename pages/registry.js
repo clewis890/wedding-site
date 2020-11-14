@@ -28,7 +28,7 @@ export default function Registry() {
                 <b className={styles.registrytext}>Para nossos amigos e familia brasileiros</b> 
                 <a href="https://antoniaeclark.zankyou.com/br/lista-casamento" className={styles.registrylink} noopener="true" target="_blank">Nossa lista se encontra aqui</a>
                 <b className={styles.registrytext}>For our American friends and family</b>
-                <a href="https://registry.theknot.com/clark-lewis-antonia-abichequer-december-2020-rs/43311778" className={styles.registrylink} noopener="true" target="_blank" type="hidden">Click here for our registry</a>
+                <a href="https://registry.theknot.com/antonia-abichequer-clark-lewis-december-2020-rs/43311778" className={styles.registrylink} noopener="true" target="_blank" type="hidden">Click here for our registry</a>
             </div>
             <div className={styles.registrypicture}>
               <Image src="/images/wedding-gift.jpg" alt="Wedding picture" width="400" height="250" />
