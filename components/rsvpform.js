@@ -62,8 +62,8 @@ export default class MyForm extends React.Component {
            </div>
            <div className={styles.label}>
                  <label htmlfor="plus-one">Quantas pessoas?</label>
-                  <select className={styles.input} id="plusone" name="number-of-guests" value="selectplusone" required>
-                    <option className={styles.option} defaultValue=" " selected disabled>Escolha aqui</option>
+                  <select className={styles.input} id="numberofguests" name="number-of-guests" defaultValue="howmanyguests" required>
+                    <option className={styles.option} defaultValue="" selected disabled>Escolha aqui</option>
                     <option className={styles.option} defaultValue="1">1</option>
                     <option className={styles.option} defaultValue="2">2</option>
                     <option className={styles.option} defaultValue="3">3</option>
