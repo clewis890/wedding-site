@@ -117,7 +117,7 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
 }
 
 .title,
@@ -144,10 +144,10 @@
    border-radius: 40px;
    box-shadow: 1px 1px 6px 2px #cda990bb;
    background-color: #cda990e3;
-   -webkit-border-radius: 40px;
-   -moz-border-radius: 40px;
-   -ms-border-radius: 40px;
-   -o-border-radius: 40px;
+   -webkit-border-radius:;
+   -moz-border-radius:;
+   -ms-border-radius:;
+   -o-border-radius:;
 }
 
 .time {
