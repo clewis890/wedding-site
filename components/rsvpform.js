@@ -80,7 +80,7 @@ export default class MyForm extends React.Component {
           <div>
             <div className={styles.messagebox}>
           <label className={styles.label} >Mensagem: </label>
-          <textarea placeholder="Pode mandar uma mensagem direto para o casal aqui" type="text" name="message" className={styles.textbox} rows="8" cols="10" wrap="soft" required>
+          <textarea placeholder="Pode mandar uma mensagem direto para o casal aqui" type="text" name="message" minlength="5" title="oi" className={styles.textbox} rows="8" cols="10" wrap="soft" required>
           </textarea>
           </div>
           </div>

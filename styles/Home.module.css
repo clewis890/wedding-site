@@ -130,24 +130,24 @@
 }
 
 .countdownWrapper {
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 2rem 1rem 0 1rem;
-  margin-bottom: 10px;
-  color: #fff;
-  flex-basis: 15%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  border-radius: 30px;
-  box-shadow: 1px 1px 6px 2px #cda990bb;
-  background-color: #cda990e3;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+   font-size: 20px;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   padding: 2rem 1rem 0 1rem;
+   margin-bottom: 10px;
+   color: #fff;
+   flex-basis: 15%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   border-radius: 400px;
+   box-shadow: 1px 1px 6px 2px #cda990bb;
+   background-color: #cda990e3;
+   -webkit-border-radius: 400px;
+   -moz-border-radius: 400px;
+   -ms-border-radius: 400px;
+   -o-border-radius: 400px;
 }
 
 .time {
