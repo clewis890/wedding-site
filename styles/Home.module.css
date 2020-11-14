@@ -318,6 +318,15 @@ h3.registrytitle { font-size: 30px; }
   color: #eaeaea;
 }
 
+.registrybox {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 /** Guestbook Page */
 
 .guestbookcard {
@@ -515,8 +524,10 @@ h3.guestbook {
 }
 
 .success { 
-  color: #2a006d
+  font-style: oblique;
+  text-align: center;
 }
+
 div.label {
   line-height: 1em;
   font-style: italic;
@@ -846,6 +857,7 @@ option.option {
 }
 
 @media (min-width: 992px) {
+  
   div.navigation { 
     display: flex;
     font-weight: 400;
@@ -884,6 +896,8 @@ option.option {
   }
   .rsvptext { width: 100%; }
 
+  .registrylink { margin: 20px auto; }
+ 
   .form { width: 70%; }
   .textbox { max-width: 400px; }
   

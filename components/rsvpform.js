@@ -51,7 +51,7 @@ export default class MyForm extends React.Component {
            <div className={styles.label}>
               <label htnmlfor="plusone">Acompanhante(s)?</label>
               <select className={styles.input} id="plusone" name="plusone" defaultValue="selectplusone" required>
-                <option className={styles.option} defaultValue="" selected disabled hidden>Escolha aqui</option>
+                <option className={styles.option} defaultValue="" selected disabled>Escolha aqui</option>
                 <option className={styles.option} defaultValue="no">Nao</option>
                 <option className={styles.option} defaultValue="yes">Sim</option>
                </select>
@@ -63,7 +63,7 @@ export default class MyForm extends React.Component {
            <div className={styles.label}>
                  <label htmlfor="plus-one">Quantas pessoas?</label>
                   <select className={styles.input} id="plusone" name="number-of-guests" value="selectplusone" required>
-                    <option className={styles.option} defaultValue="" selected disabled hidden>Escolha aqui</option>
+                    <option className={styles.option} defaultValue=" " selected disabled>Escolha aqui</option>
                     <option className={styles.option} defaultValue="1">1</option>
                     <option className={styles.option} defaultValue="2">2</option>
                     <option className={styles.option} defaultValue="3">3</option>
@@ -79,13 +79,13 @@ export default class MyForm extends React.Component {
                   </div>
           <div>
             <div className={styles.messagebox}>
-          <label className={styles.label}>Mensagem: </label>
-          <textarea placeholder="Pode mandar uma mensagem direto para o casal aqui" type="text" name="message" className={styles.textbox} rows="8" cols="10" wrap="hard">
+          <label className={styles.label} >Mensagem: </label>
+          <textarea placeholder="Pode mandar uma mensagem direto para o casal aqui" type="text" name="message" className={styles.textbox} rows="8" cols="10" wrap="soft" required>
           </textarea>
           </div>
           </div>
-          {status === "SUCCESS" ? <p className={styles.success}>Obrigado!  <FontAwesomeIcon icon={faGlassCheers} /></p> : <button className={styles.rsvpbutton}>Confirmar</button>}
-          {status === "ERROR" && <p>Ops! Certifique-se de completar o formulario</p>}
+          {status === "SUCCESS" ? <p className={styles.success}>Obrigado por confirmar sua presença! <FontAwesomeIcon icon={faGlassCheers} /></p> : <button className={styles.rsvpbutton}>Confirmar</button>}
+          {status === "ERROR" && <p>Ops! Alguma coisa deu errado</p>}
         </form>
       );
     }
@@ -109,4 +109,3 @@ export default class MyForm extends React.Component {
       xhr.send(data);
     }
   }
-  
