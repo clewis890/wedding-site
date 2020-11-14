@@ -9,7 +9,8 @@ export default function Header() {
             <Navigation />        
                 <h1 className={styles.title}
                 >Antonia<br/>&<br />Clark<br />
-                <span>Porto Alegre, RS, Brasil</span><br /><span>12.12.2020</span></h1>
+                {/* <span>Porto Alegre, RS, Brasil</span><br /> */}
+                <span>12.12.2020</span></h1>
                 <div className={styles.countdownBox}>
                     <Countdown className={styles.time}/>
                 </div>
