@@ -126,11 +126,11 @@
 .title span {
   font-family: fantasy;
   font-weight: 400;
-  font-size: 30px; 
+  font-size: 25px; 
 }
 
 .countdownWrapper {
-   font-size: 20px;
+   font-size: 16px;
    display: flex;
    align-items: center;
    width: 100%;
@@ -141,13 +141,13 @@
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
-   border-radius: 400px;
+   border-radius: 40px;
    box-shadow: 1px 1px 6px 2px #cda990bb;
    background-color: #cda990e3;
-   -webkit-border-radius: 400px;
-   -moz-border-radius: 400px;
-   -ms-border-radius: 400px;
-   -o-border-radius: 400px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   -ms-border-radius: 40px;
+   -o-border-radius: 40px;
 }
 
 .time {
@@ -573,7 +573,7 @@ option.option {
 
 .footer {
   width: 100%;
-  height: 170px;
+  height: 178px;
   font-size: 13px;
   border-top: 1px solid #eaeaea;
   display: flex;
