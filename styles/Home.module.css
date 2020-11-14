@@ -293,6 +293,30 @@
 
 h3.registrytitle { font-size: 30px; }
 
+.registrylink {
+  font-size: 16px;
+  font-style: italic;
+  margin: 20px auto;
+  padding: 10px 15px;
+  border-radius: 50px;
+  background-color: #d87070;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.registrylink:link,
+.registrylink:visited {
+  border: 1px solid #c9c9c9;
+
+}
+.registrylink:hover,
+.registrylink:active {
+  background-color: #a75656;
+  border: 1px solid #9e9e9e;
+}
+
 /** Guestbook Page */
 
 .guestbookcard {
@@ -489,6 +513,9 @@ h3.guestbook {
   flex-direction: column;
 }
 
+.success { 
+  color: #2a006d
+}
 div.label {
   line-height: 1em;
   font-style: italic;
@@ -781,7 +808,10 @@ option.option {
   }
 
   .registrypicture { justify-content: flex-start; }
-
+  .registrylink { 
+    font-size: 20px;
+    margin-top: 30px;
+  }
   .form {
     display: flex;
     justify-content: center;
@@ -832,9 +862,12 @@ option.option {
     flex-direction: row;
   }
 
-  .countdownWrapper { justify-content: center; }
+  .countdownWrapper { 
+    width: 40vw;
+    justify-content: center;
+  }
   .time { font-size: 140%; }
-  .time2 { font-size: 65%; }
+  .time2 { font-size: 70%; }
   .link { 
     font-weight: 400;
     font-size: 120%;

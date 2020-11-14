@@ -1,4 +1,5 @@
 import React from 'react';
+import { useForm } from '@formspree/react';
 import styles from '../styles/Home.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGlassCheers } from "@fortawesome/free-solid-svg-icons";
@@ -11,6 +12,24 @@ export default class MyForm extends React.Component {
         status: ""
       };
     }
+
+    /*
+    function MyForm() {
+    const [state, handleSubmit] = useForm('myybjojo');
+    if (state.succeeded) {
+      return <div><p className={styles.success}>Obrigado!  <FontAwesomeIcon icon={faGlassCheers} /></p></div>
+    }
+    return
+      <form onSubmit={handleSubmit}>
+        // input rest of form info here
+
+
+         
+        <button type="submit" disabled={state.submitting} className={styles.rsvpbutton}>Confirmar</button>
+      </form>
+  }
+    
+    */
   
     render() {
       const { status } = this.state;
@@ -21,12 +40,13 @@ export default class MyForm extends React.Component {
           method="POST"
           className={styles.form}>
               <div>
+              <input type="hidden" name="_subject" value="New submission!" />
             <label className={styles.label}>Nome completo: *</label>
             <input placeholder="Insere seu nome e sobrenome" type="text" name="name" className={styles.input} maxLength="20" required />
             </div>
             <div>
           <label className={styles.label}>E-mail: *</label>
-          <input placeholder="Insere seu e-mail aqui" type="email" name="email" className={styles.input} required />
+          <input placeholder="Insere seu e-mail aqui" type="text" name="_replyto" className={styles.input} required />
           </div>
            <div className={styles.label}>
               <label htnmlfor="plusone">Acompanhante(s)?</label>
@@ -41,8 +61,8 @@ export default class MyForm extends React.Component {
                <input placeholder="Esposo/a, Namorado/a, Filho/a" type="text" name="name" className={styles.input} />
            </div>
            <div className={styles.label}>
-                 <label htnmlfor="plusone">Quantas pessoas?</label>
-                  <select className={styles.input} id="plusone" name="plusone" value="selectplusone" required>
+                 <label htmlfor="plus-one">Quantas pessoas?</label>
+                  <select className={styles.input} id="plusone" name="number-of-guests" value="selectplusone" required>
                     <option className={styles.option} defaultValue="" selected disabled hidden>Escolha aqui</option>
                     <option className={styles.option} defaultValue="1">1</option>
                     <option className={styles.option} defaultValue="2">2</option>
@@ -64,7 +84,7 @@ export default class MyForm extends React.Component {
           </textarea>
           </div>
           </div>
-          {status === "SUCCESS" ? <p>Obrigado! Ficamos feliz de te ter no nosso dia especial <FontAwesomeIcon icon={faGlassCheers} /></p> : <button className={styles.rsvpbutton}>Confirmar</button>}
+          {status === "SUCCESS" ? <p className={styles.success}>Obrigado!  <FontAwesomeIcon icon={faGlassCheers} /></p> : <button className={styles.rsvpbutton}>Confirmar</button>}
           {status === "ERROR" && <p>Ops! Certifique-se de completar o formulario</p>}
         </form>
       );
