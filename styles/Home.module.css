@@ -242,7 +242,7 @@
 .venuecard {
   background-color: #eaeaea;
   width: 90%;
-  margin: 3rem auto 3rem auto;
+  margin: 1rem auto 3rem auto;
   flex-basis: 85%;
   padding: 1rem;
   text-align: center;
@@ -259,8 +259,8 @@
   -ms-border-radius:;
   -o-border-radius:;
 }
-.venue { width: 70%; }
 
+.venue { width: 70%; }
 
 .newsbox { 
   display: flex;
@@ -269,7 +269,6 @@
   justify-content: center;
 }
 
-
  b.blogdate { margin-top: 20px; }
 
  a.photolink {
@@ -277,8 +276,6 @@
   position: relative;
   margin: 2rem auto auto auto;
 }
-
-
 
 .newsphotobox {
   display: flex;
@@ -878,6 +875,7 @@ option.option {
     width: 50%;
     margin-bottom: 3%;
   }
+
   .footer { height: 150px; }
   a.footerlink { font-size: 24px; }
   .copyright { font-size: 16px; }
