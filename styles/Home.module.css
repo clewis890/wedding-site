@@ -201,7 +201,7 @@
 .card1 {
   background-color: #eaeaea;
   width: 90%;
-  margin: 2rem auto 3rem auto;
+  margin: 0 auto 3rem auto;
   flex-basis: 85%;
   padding: 1rem;
   text-align: center;
@@ -286,7 +286,7 @@
 
 .registrycard {
   width: 60%;
-  margin: 2rem auto 3rem auto;
+  margin: 0 auto 3rem auto;
   background-color: #eaeaea;
   flex-basis: 100%;
   padding: 1rem;
@@ -355,7 +355,7 @@ h3.registrytitle { font-size: 30px; }
 
 .guestbookcard {
   background-color: #eaeaea;
-  margin: 2rem auto 3rem auto;
+  margin: 0 auto 3rem auto;
   flex-basis: 75%;
   padding: 3rem;
   text-align: left;
@@ -383,7 +383,7 @@ h3.registrytitle { font-size: 30px; }
 
 .rsvpcard {
   width: 65%;
-  margin: 2em auto 3rem auto;
+  margin: 0 auto 3rem auto;
   background-color: #fff;
   flex-basis: 65%;
   padding: 1rem;
@@ -403,7 +403,7 @@ h3.registrytitle { font-size: 30px; }
 
 .photocard {
   width: 100%;
-  margin: 2em auto 3rem auto;
+  margin: 0 auto 3rem auto;
   background-color: #eaeaea;
   flex-basis: 85%;
   padding: 1rem;
