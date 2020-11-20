@@ -142,12 +142,14 @@
    flex-direction: row;
    justify-content: space-evenly;
    border-radius: 40px;
-   box-shadow: 1px 1px 6px 2px #cda990bb;
-   background-color: #cda990e3;
-   -webkit-border-radius:;
-   -moz-border-radius:;
-   -ms-border-radius:;
-   -o-border-radius:;
+   border-radius: 5px;
+    border: 0.5px solid rgb(41, 25, 11);
+    background: linear-gradient(79deg, rgb(59, 34, 10) 17%, rgb(88, 49, 20) 50%, rgb(102, 59, 26) 60%, rgb(112, 65, 29) 70%, rgb(124, 78, 34) 84%, rgb(136, 84, 44) 90%);
+    box-shadow: 2px 3px 8px 3px rgb(14, 8, 3);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .time {
@@ -665,8 +667,7 @@ option.option {
     color: #fff;
     flex-basis: 35%;
     display: flex;
-    box-shadow: 1px 2px 5px 2px #cda990bb;
-    background-color: #cda990e3;
+    
   }
 
   .time {
@@ -900,10 +901,12 @@ option.option {
     flex-direction: row;
   }
 
-  .countdownWrapper { 
+  .countdownWrapper {
     width: 40vw;
     justify-content: center;
+    border-radius: 5px;
   }
+
   .time { font-size: 140%; }
   .time2 { font-size: 70%; }
   .link { 
@@ -940,6 +943,7 @@ option.option {
     font-size: 18px;
     margin-left: 10px; 
   }
+
   .copyright {
     line-break: normal;
     font-size: 16px;
@@ -949,7 +953,7 @@ option.option {
 }
 
 @media (min-width: 1200px) {
-  
+  .countdownWrapper { width: 35vw; }
   .rsvptext {
     width: 73%;
     display: flex;
