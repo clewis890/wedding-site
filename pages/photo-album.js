@@ -19,6 +19,7 @@ import DisqusComments from '.././components/Blog'
             </Head>
 
         <main className={styles.main}>
+       
           <Header />
             <div className={styles.grid}>
               <div className={styles.photocard}>
@@ -55,6 +56,7 @@ import DisqusComments from '.././components/Blog'
 
               </div>
             </div>
+          
         </main>
         <Footer />
         </div>
