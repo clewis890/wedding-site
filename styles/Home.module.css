@@ -103,11 +103,11 @@
 
 .mobilelink:link,
 .mobilelink.visited {
-  transition: color 0.3s;
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  -ms-transition: color 0.3s;
-  -o-transition: color 0.3s;
+  transition: color 0.4s;
+  -webkit-transition: color 0.4s;
+  -moz-transition: color 0.4s;
+  -ms-transition: color 0.4s;
+  -o-transition: color 0.4s;
 }
 
 .mobilelink:hover,
@@ -143,22 +143,20 @@
    flex-direction: row;
    justify-content: space-evenly;
    /* animation: 2s ease-in 0.65s both running slidein; */
-   border-radius: 40px;
-   border-radius: 5px;
    border: 0.5px solid rgb(41, 25, 11);
    background: linear-gradient(79deg, rgb(59, 34, 10) 17%, rgb(88, 49, 20) 50%, rgb(102, 59, 26) 60%, rgb(112, 65, 29) 70%, rgb(124, 78, 34) 84%, rgb(136, 84, 44) 90%);
    box-shadow: 2px 3px 8px 3px rgb(14, 8, 3);
-   -webkit-border-radius: 40px;
-   -moz-border-radius: 40px;
-   -ms-border-radius: 40px;
-   -o-border-radius: 40px;
    /* -webkit-animation: 2s ease-in 0.65s both running slidein; */
 }
 
 /* @keyframes slidein {
   from {
     transform: translateX(100%);
-  }
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
   to {
     transform: translateX(0%);
   }

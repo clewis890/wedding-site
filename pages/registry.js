@@ -1,8 +1,11 @@
+import * as React from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from '.././components/Header'
 import Footer from '.././components/Footer';
 import Image from 'next/image';
+
+
 
 export default function Registry() {
     return (
@@ -32,7 +35,9 @@ export default function Registry() {
                 </div>
             </div>
             <div className={styles.registrypicture}>
+          
               <Image src="/images/wedding-gift.jpg" alt="Wedding picture" width="400" height="250" />
+    
             </div>
           </div>
         </div>
