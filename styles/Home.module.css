@@ -142,7 +142,7 @@
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
-   animation: 2s ease-in 0.65s both running slidein;
+   /* animation: 2s ease-in 0.65s both running slidein; */
    border-radius: 40px;
    border-radius: 5px;
    border: 0.5px solid rgb(41, 25, 11);
@@ -152,17 +152,17 @@
    -moz-border-radius: 40px;
    -ms-border-radius: 40px;
    -o-border-radius: 40px;
-   -webkit-animation: 2s ease-in 0.65s both running slidein;
+   /* -webkit-animation: 2s ease-in 0.65s both running slidein; */
 }
 
-@keyframes slidein {
+/* @keyframes slidein {
   from {
     transform: translateX(100%);
   }
   to {
     transform: translateX(0%);
   }
-}
+} */
 
 .time {
   font-weight: 700;
