@@ -138,29 +138,36 @@
    padding: 2rem 1rem 0 1rem;
    margin-bottom: 10px;
    color: #fff;
+   position: relative;
+   overflow: hidden;
    flex-basis: 15%;
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
-   /* animation: 2s ease-in 0.65s both running slidein; */
-   border: 0.5px solid rgb(41, 25, 11);
-   background: linear-gradient(79deg, rgb(59, 34, 10) 17%, rgb(88, 49, 20) 50%, rgb(102, 59, 26) 60%, rgb(112, 65, 29) 70%, rgb(124, 78, 34) 84%, rgb(136, 84, 44) 90%);
-   box-shadow: 2px 3px 8px 3px rgb(14, 8, 3);
-   /* -webkit-animation: 2s ease-in 0.65s both running slidein; */
+   border: 0.5px solid rgb(17, 17, 16);
+   box-shadow: 2px 3px 8px 3px rgb(0, 0, 0);
 }
 
-/* @keyframes slidein {
-  from {
-    transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
+.countdownWrapper:before {
+  content: " ";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  background: url("/images/rusticbackground.jpg") 0 0 repeat;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
 }
-  to {
-    transform: translateX(0%);
-  }
-} */
+
+.countdownBox {
+  margin-bottom: 0;
+  height: 100px;
+}
 
 .time {
   font-weight: 700;
@@ -221,6 +228,7 @@
   flex-direction: column;
   color: inherit;
   text-decoration: none;
+  box-shadow: 0 1px 6px rgba(190, 190, 190, 0.12), 0 1px 4px rgba(218, 218, 218, 0.24);
   border: 1px solid #eaeaea;
   border-radius: 10px;
   -webkit-border-radius:;

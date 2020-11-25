@@ -49,28 +49,26 @@ const Countdown = () => {
 };
 
   return (
-    <div>
       <div className={styles.countdownWrapper}>
-        <div className='time-section'>
+        <div className={styles.section}>
           <div className={styles.time}>{state.days || '0'} <span className={styles.time2}>Dias</span></div>
         </div>
-        <div className='time-section'>
-          <div className='time'></div>
+        <div className={styles.section}>
+          <div className={styles.time}></div>
         </div>
-        <div className='time-section'>
+        <div className={styles.section}>
           <div className={styles.time}>{state.hours || '00'} <span className={styles.time2}>Horas</span></div>
         </div>
-        <div className='time-section'>
-          <div className='time'></div>
+        <div className={styles.section}>
+          <div className={styles.time}></div>
         </div>
-        <div className='time-section'>
+        <div className={styles.section}>
           <div className={styles.time}>{state.minutes || '00'} <span className={styles.time2}>Minutos</span></div>
         </div>
-        <div className='time-section'>
-          <div className='time'></div>
+        <div className={styles.section}>
+          <div className={styles.time}></div>
         </div>
       </div>
-    </div>
   );
 };
 
