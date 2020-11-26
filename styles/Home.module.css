@@ -16,9 +16,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.733)), url("/images/rusticbackground.jpg");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.733)), url("/images/rusticbackground.jpg");
   background-color: transparent;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 .main {
