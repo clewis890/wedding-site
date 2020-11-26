@@ -7,7 +7,11 @@ import { motion } from 'framer-motion'
 export default function Header() {
     return (
         <>
+            {/* Importing the Navigation component into the Header */}
+        
             <Navigation />
+             {/* Using framer motion animation
+            for h1 header at top of page */}
             <motion.div initial="hidden" animate="visible" variants={{
                 hidden: {
                     scale: 0.2,

@@ -16,12 +16,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.733)), url("/images/rusticbackground.jpg");
-  background-color: transparent;
-  background-attachment: fixed; */
 }
 
 .main {
+  z-index: 0;
   padding: 5rem 0;
   flex: 1;  
   display: flex;
@@ -131,21 +129,21 @@
 }
 
 .countdownWrapper {
-   font-size: 16px;
-   display: flex;
-   align-items: center;
-   width: 100%;
-   padding: 2rem 1rem 0 1rem;
-   margin-bottom: 10px;
-   color: #fff;
-   position: relative;
-   overflow: hidden;
-   flex-basis: 15%;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   border: 0.5px solid rgb(17, 17, 16);
-   box-shadow: 2px 3px 8px 3px rgb(0, 0, 0);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-basis: 15%;
+  z-index: -1;
+  width: 100%;
+  padding: 2rem 1rem 0 1rem;
+  margin-bottom: 10px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  border: 0.5px solid rgb(17, 17, 16);
+  box-shadow: 2px 3px 8px 3px rgb(0, 0, 0);
 }
 
 .countdownWrapper:before {
@@ -156,12 +154,12 @@
   top: -50%;
   left: -50%;
   z-index: -1;
-  background: url("/images/rusticbackground.jpg") 0 0 repeat;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
+  background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.4)), url("/images/rusticbackground.jpg") 0 0 repeat;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 
 .countdownBox {
@@ -815,6 +813,11 @@ option.option {
 @media (min-width: 768px) {
 
   .mobilenav { padding: 0.4em; }
+  .time {
+    padding: 5px;
+    box-shadow: 5px 3px 6px 5px black;
+  }
+
   .card1 { padding: 0 1rem 1rem 1rem; }
   .newswelcome { 
     text-align: left;
@@ -909,7 +912,11 @@ option.option {
   }
 
   div.mobilenav { display: none; } 
-  
+  .time {
+    padding: 4.2px;
+    box-shadow: 5px 3px 6px 5px black;
+    
+}
   .card1, 
   .card {
     width: 100%;

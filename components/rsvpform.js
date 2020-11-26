@@ -12,25 +12,7 @@ export default class MyForm extends React.Component {
         status: ""
       };
     }
-
-    /*
-    function MyForm() {
-    const [state, handleSubmit] = useForm('myybjojo');
-    if (state.succeeded) {
-      return <div><p className={styles.success}>Obrigado!  <FontAwesomeIcon icon={faGlassCheers} /></p></div>
-    }
-    return
-      <form onSubmit={handleSubmit}>
-        // input rest of form info here
-
-
-         
-        <button type="submit" disabled={state.submitting} className={styles.rsvpbutton}>Confirmar</button>
-      </form>
-  }
-    
-    */
-  
+      
     render() {
       const { status } = this.state;
       return (
@@ -49,7 +31,7 @@ export default class MyForm extends React.Component {
           <input placeholder="Insere seu e-mail aqui" type="text" name="_replyto" className={styles.input} required />
           </div>
            <div className={styles.label}>
-              <label htnmlfor="plusone">Acompanhante(s)?</label>
+              <label htmlfor="plusone">Acompanhante(s)?</label>
               <select className={styles.input} id="plusone" name="plusone" defaultValue="selectplusone" required>
                 <option className={styles.option} defaultValue="" selected disabled>Escolha aqui</option>
                 <option className={styles.option} defaultValue="no">Nao</option>
