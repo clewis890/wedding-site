@@ -1,15 +1,17 @@
-import styles from '../styles/Home.module.css'
-import Link from 'next/link'
+import styles from '../styles/Home.module.css';
+import Link from 'next/link';
+
+const navTitle = ['Início', 'Lista de Casamento', 'Livro de Visitas', 'Álbum de Fotos', 'Confirmar Presença'];
 
 export default function DesktopNav() {
     return (
         <>
         <div className={styles.navigation}>
-          <Link href="/"><a className={styles.link}>Início</a></Link>
-          <Link href="/registry"><a className={styles.link}>Lista de Casamento</a></Link>
-          <Link href="/guest-book"><a className={styles.link}>Livro de Visitas</a></Link>
-          <Link href="/photo-album"><a className={styles.link}>Álbum de Fotos</a></Link>
-          <Link href="/rsvp"><a className={styles.link}>Confirmar Presença</a></Link>
+          <Link href="/"><a className={styles.link}>{navTitle[0]}</a></Link>
+          <Link href="/registry"><a className={styles.link}>{navTitle[1]}</a></Link>
+          <Link href="/guest-book"><a className={styles.link}>{navTitle[2]}</a></Link>
+          <Link href="/photo-album"><a className={styles.link}>{navTitle[3]}</a></Link>
+          <Link href="/rsvp"><a className={styles.link}>{navTitle[4]}</a></Link>
       </div>
       </>
     )

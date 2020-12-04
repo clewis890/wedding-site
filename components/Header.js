@@ -27,7 +27,8 @@ export default function Header() {
             }}>       
                 <h1 className={styles.title}
                 >Antonia<br/>&<br />Clark<br />
-                <span>12.12.2020</span></h1>
+                <span>12.12.2020</span>
+                </h1>
                 </motion.div> 
                 <div className={styles.countdownBox}>
                     <Countdown className={styles.time}/>
