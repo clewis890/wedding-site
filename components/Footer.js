@@ -2,13 +2,7 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link'
 
 const footerNav = ['Início', 'Lista de Casamento', 'Livro de Visitas', 'Álbum de Fotos', 'Confirmar Presença'];
-const footerCopy = () => {
-    return (
-        <div className={styles.copyright}>
-            <p>Copyright &copy; Clark Lewis Web Development 2020</p>
-        </div>
-    );
-}
+
 export default function Footer() {
     return (
         <>

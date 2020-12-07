@@ -2,7 +2,7 @@ import styles from '../styles/Home.module.css';
 import Navigation from './navigation';
 import DesktopNav from './desktopnav';
 import Countdown from './Countdown';
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 export default function Header() {
     return (

@@ -7,6 +7,7 @@ export default function MyApp ({ Component, pageProps, router }) {
   
   return (
     <Provider options={{ site: process.env.SITE }} session={session}>
+      {/* page transition with framer motion */}
       <motion.div key={router.route} initial="pageInitial" animate="pageAnimate" variants={{
         pageInitial: {
           opacity: 0.5
