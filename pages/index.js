@@ -45,7 +45,9 @@ import Image from 'next/image'
                     <p className={styles.casal}>Clark adicionou uma foto ao nosso álbum. Clique na imagem abaixo para visualizar!</p>
                     <div className={styles.newsphotobox}>
                       <Link href="/photo-album"><a className={styles.photolink}><Image className={styles.newspicture} src="/images/antoniaclark9.jpeg" alt="Antonia and Clark" width="130" height="200" /></a></Link>
-                    </div>
+                      </div>
+                    <b className={styles.blogdate}>12/12/2020</b>
+                    <p className={styles.casal}>Infelizmente, por causa do decreto no Rio Grande do Sul, a nossa festa foi adiada a uma data ainda não determinada. Mas já recebemos tanto amor e carinho de tantos de vocês e somos tão gratos pela familia maravilhosa que temos e os nossos amigos tão carinhosos. Obrigado por tudo, e nos vamos avisando todo mundo quando uma data de festa for determinada! Abraços e beijos!</p>
                 </div>
             </div>
           </div>
