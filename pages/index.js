@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Header from '.././components/Header';
 import Footer from '.././components/Footer';
 import Image from 'next/image'
-import Notiflix from "notiflix";
+// import Notiflix from "notiflix";
 
 
 Notiflix.Notify.Info(
