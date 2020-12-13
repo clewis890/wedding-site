@@ -1,9 +1,18 @@
-import Head from 'next/head'
+import Head from 'next/head'; 
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Header from '.././components/Header';
 import Footer from '.././components/Footer';
 import Image from 'next/image'
+import Notiflix from "notiflix";
+
+
+Notiflix.Notify.Info(
+  'Info message text',
+  function() {
+
+  }
+);
 
  export default function Home() {    
   return (
@@ -15,6 +24,7 @@ import Image from 'next/image'
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />              
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        <script src="dist/notiflix-aio-2.6.0.min.js"></script>
       </Head>
 
       <main className={styles.main}>
@@ -39,9 +49,9 @@ import Image from 'next/image'
             <div className={styles.card}>
               <h3 className={styles.newswelcome}>Notícias</h3>
                 <div className={styles.newsbox}>
-                  <b className={styles.blogdate}>10-11-2020</b>
+                  <b className={styles.blogdate}>10/11/2020</b>
                     <p className={styles.casal}>Aqui colocaremos algumas informações e detalhes sobre o casamento. Além de poderem acompanhar alguns momentos nossos, podem deixar suas mensagens aqui e confirmarem a sua presença para que possamos curtir esse momento maravilhoso juntos!</p>
-                  <b className={styles.blogdate}>11-11-2020</b>
+                  <b className={styles.blogdate}>11/11/2020</b>
                     <p className={styles.casal}>Clark adicionou uma foto ao nosso álbum. Clique na imagem abaixo para visualizar!</p>
                     <div className={styles.newsphotobox}>
                       <Link href="/photo-album"><a className={styles.photolink}><Image className={styles.newspicture} src="/images/antoniaclark9.jpeg" alt="Antonia and Clark" width="130" height="200" /></a></Link>

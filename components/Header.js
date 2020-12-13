@@ -30,9 +30,9 @@ export default function Header() {
                 <span>12.12.2020</span>
                 </h1>
                 </motion.div> 
-                <div className={styles.countdownBox}>
+                {/* <div className={styles.countdownBox}>
                     <Countdown className={styles.time}/>
-                </div>
+                </div> */}
             <DesktopNav />
         </>
     )     
