@@ -7,12 +7,12 @@ import Image from 'next/image'
 // import Notiflix from "notiflix";
 
 
-Notiflix.Notify.Info(
-  'Info message text',
-  function() {
+// Notiflix.Notify.Info(
+//   'Info message text',
+//   function() {
 
-  }
-);
+//   }
+// );
 
  export default function Home() {    
   return (
