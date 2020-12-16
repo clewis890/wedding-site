@@ -1,7 +1,7 @@
-import {DiscussionEmbed} from "disqus-react"
+import {DiscussionEmbed} from "disqus-react";
 
 const DisqusComments = () => {
-  const disqusShortname = "antoniaeclark-com"
+  const disqusShortname = "antoniaeclark-com";
   const disqusConfig = {
     url: "https://antoniaeclark.com/",
   };

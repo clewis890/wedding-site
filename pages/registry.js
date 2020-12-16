@@ -35,14 +35,11 @@ export default function Registry() {
                 </div>
             </div>
             <div className={styles.registrypicture}>
-          
               <Image src="/images/wedding-gift.jpg" alt="Wedding picture" width="400" height="250" />
-    
             </div>
           </div>
         </div>
       </main>
-
      <Footer />
     </div>
     </>

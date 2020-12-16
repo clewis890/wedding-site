@@ -53,10 +53,8 @@ import DisqusComments from '.././components/Blog'
                   <div className={styles.photoblog}>
                     <DisqusComments />
                   </div>
-
               </div>
             </div>
-          
         </main>
         <Footer />
         </div>
