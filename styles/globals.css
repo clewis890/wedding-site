@@ -4,20 +4,20 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.733)), url("/images/rusticbackground.jpg");
-  background-color: transparent;
+  background-color: #ffb49b;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.733)), url("/images/rusticbackground.jpg"); */
   background-attachment: fixed;
-  z-index: -100;
+  /* z-index: -100; */
   }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
 * {  box-sizing: border-box; }
 
 h1, h2, h3 {
+  color: #000 !important;
   font-family: 'Parisienne', cursive;
   font-size: 28px;
 }
@@ -26,4 +26,5 @@ p, label { font-family: 'Work Sans', sans-serif; }
 
 .card, .card1, .guesbookcard, .rsvpcard, .registrycard, .photocard {
   background-color: #eaeaea;
+  box-shadow: 1px 3px 8px 1px #8a8a8a !important;
 }

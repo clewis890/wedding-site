@@ -13,7 +13,7 @@ export default function Registry() {
         <>
         <div className={styles.container}>
             <Head>
-                <title>Confirmar a sua Presença - Antonia e Clark</title>
+                <title>RSVP - Antonia & Clark</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -26,13 +26,13 @@ export default function Registry() {
           <div className={styles.grid}>
             <div className={styles.rsvpcard}>
               <div className={styles.welcometext}>
-                <h3 className={styles.rsvptitle}>Confirme sua Presença</h3>
+                <h3 className={styles.rsvptitle}>RSVP</h3>
               </div>
               <div className={styles.rsvppicture}>
                 <Image src="/images/rsvp.jpg" alt="rsvp" width="400" height="250" />
               </div>
                 <span className={styles.rsvptext}>
-                  <p className={styles.guesttext}>Aqui pode confirmar tua presença na festa! <FontAwesomeIcon icon={faGrinAlt} /></p>
+                  <p className={styles.guesttext}>Confirm your presence here! We thank you in advance <FontAwesomeIcon icon={faGrinAlt} /></p>
                 <MyForm />
                 </span>
             </div>

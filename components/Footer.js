@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css';
 import Link from 'next/link'
 
-const footerNav = ['Início', 'Lista de Casamento', 'Livro de Visitas', 'Álbum de Fotos', 'Confirmar Presença'];
+const footerNav = ['Home', 'Registry', 'Guestbook', 'Photo Album', 'RSVP'];
 
 export default function Footer() {
     return (

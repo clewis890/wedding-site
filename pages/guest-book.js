@@ -9,7 +9,7 @@ export default function GuestBook() {
         <>
         <div className={styles.container}>
             <Head>
-                <title>Livro de Visitas - Antonia e Clark</title>
+                <title>Guestbook - Antonia & Clark</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -22,8 +22,8 @@ export default function GuestBook() {
             <div className={styles.grid}>
               <div className={styles.guestbookcard}>
                 <div className={styles.guestbooktext}>
-                  <h3 className={styles.guestbook}>Livro de Visitas</h3>
-                    <p className={styles.casal}>Aqui voce pode deixar uma mensagem para os noivos!</p>
+                  <h3 className={styles.guestbook}>Guestbook</h3>
+                    <p className={styles.casal}>You can leave a message here for the couple!</p>
                 </div>
                 <DisqusComments />
               </div>

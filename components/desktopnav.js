@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 
-const navTitle = ['Início', 'Lista de Casamento', 'Livro de Visitas', 'Álbum de Fotos', 'Confirmar Presença'];
+const navTitle = ['Home', 'Registry', 'Guestbook', 'Photo Album', 'RSVP'];
 
 export default function DesktopNav() {
     return (
