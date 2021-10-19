@@ -34,7 +34,7 @@
   display: flex;
   justify-self: center;
   position: relative;
-  color: #eaeaea;
+  color: #c5c5c5;
   text-transform: uppercase;
   font-weight: 700;
   padding-bottom: 5px;
@@ -62,8 +62,8 @@
 
 .link:hover,
 .link:active { 
-  color: #eeeeee;
-  border-bottom: 2px solid #fff;
+  color: rgba(255, 202, 29, 0.858) !important;
+  border-bottom: 2px solid rgba(255, 202, 29, 0.858) ;
 
  }
  
@@ -77,9 +77,8 @@
 }
 
 .mobilenav {
-  display: none;
   z-index: 9999;
-  /* display: flex; */
+  display: flex;
   flex-direction: row;
   align-items: space-evenly;
   justify-content: space-evenly;
@@ -88,8 +87,9 @@
   left: 0;
   margin: auto;
   padding: 0.5em;
-  background-color: rgb(231, 231, 231);
-  box-shadow: 3px 3px 6px 3px rgb(155, 155, 155);
+  color: #000;
+  background-color: rgb(245, 245, 225);
+  box-shadow: 0px 3px 6px 3px rgb(155, 155, 155);
   width: 100%;
   overflow: hidden;
 }
@@ -286,6 +286,8 @@
 
 .newsbox { 
   display: flex;
+  border-radius: 20px;
+  padding: 10px;
   box-shadow: inset 1px 3px 10px 1px rgba(0, 0, 0, 0.295);
   align-items: space-evenly;
   flex-direction: column;
@@ -458,6 +460,37 @@ h3.registrytitle { font-size: 30px; }
   flex-direction: row;
 }
 
+/* Photo Carousel */
+#fader {
+height: 50vw;
+position: relative;
+overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  #fader {
+    height: 300px;
+  }
+}
+
+#fader__slide {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+}
+
+#fader img {
+width: 100%;
+height: auto;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateY(-50%) translateX(-50%);
+-webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+/* Photo Carousel */
 .rsvppicture {
   flex-basis: 65%;
   width: 100%;
@@ -625,8 +658,8 @@ div.label {
 .textarea {
   border: 1px solid rgba(126, 125, 125, 0.322);
   margin-bottom: 1.3rem;
-  width: 90%;
-  margin: 10px 10px;
+  width: 100%;
+  margin: auto;
   height: 150px;
   padding: 10px;
   resize: none;
@@ -642,7 +675,8 @@ div.label {
 .messagebox {
   border: none;
   /* display: inline-block;*/
-  width: 20rem; 
+  width: 100%; 
+  font-size: 1.25em;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
@@ -665,7 +699,7 @@ option.option {
 }
 
 .copyright {
-  color: #000;
+  color: #fff;
   display: flex;  
   cursor: default;
   font-size: 12px;
@@ -677,7 +711,7 @@ option.option {
   padding: 4px 10px;
   color: #eaeaea;
   text-align: center;
-  transition: color 0.3s;
+  transition: color 0.4s;
 }
 
 .footerlink:link,
@@ -688,7 +722,7 @@ option.option {
 
 .footerlink:hover,
 .footerlink:active { 
-  color: #fff; 
+  color: gold; 
 }
 /* 
 @media only screen and (min-height: 375px) and (max-width: 812px){
@@ -698,6 +732,12 @@ option.option {
   .photoalbum { flex-direction: row; }
 } */
 
+ @media (min-width: 320px) and (max-width: 500px) {
+   .mobilelink {
+    font-size: 1.1em;
+     margin: 0 1.1px; 
+   }
+} 
 @media (min-width: 320px) and (max-width: 768px) {
   .title { font-size: 3rem; }
   .rsvpcard { flex-direction: column; }
@@ -707,9 +747,10 @@ option.option {
 
   .rsvppicture { margin: 0 !important; padding: 0 !important; width: 100% !important; }
   .mobilelink {
-    font-size: 22px;
-    color: #fff;
-    margin: auto 2.5rem;
+    z-index: 9999;
+    font-size: 1.4em;
+    color: #000;
+    margin: auto 1.5rem;
   }
 
   .textbox {
@@ -743,7 +784,11 @@ option.option {
     text-transform: uppercase;
   }
 
-  .card { width: 95%; padding: 5px; }
+  .card { 
+    width: 95%; 
+    padding: 5px; 
+  }
+
   .venuecard { margin-top: 3em;}
   .grid {
     width: 100%;
@@ -783,13 +828,19 @@ option.option {
 
     .venuecard { width: 95%; }
 
-    .venue { font-size: 1.15em; }
+    .venue { 
+      font-size: 1.25em; 
+      text-align: left;
+    }
+    .venuecard h3 {
+      font-size: 1.5em;
+    }
 
     .welcometext h3 { font-size: 160%; }
 
    p.casal { 
       line-height: 1.3em;
-      font-size: 18px;
+      font-size: 1.25em;
       width: 95%;
     }
 
@@ -889,6 +940,13 @@ option.option {
 @media (min-width: 768px) {
 
   .mobilenav { padding: 0.4em; }
+  div.mobilenav { display: none; } 
+  .navigation {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   .time {
     padding: 5px;
     box-shadow: 5px 3px 6px 5px black;
@@ -987,11 +1045,9 @@ option.option {
     font-size: 100%;
   }
 
-  div.mobilenav { display: none; } 
   .time {
     padding: 4.2px;
     box-shadow: 5px 3px 6px 5px black;
-    
 }
   .card1, 
   .card {
@@ -1060,6 +1116,9 @@ option.option {
     display: flex;
     justify-content: flex-end;
   }
+
+  .venuecard { width: 90%; }
+  .venuecard { font-size: 1.3em; }
 
   .form {
     display: flex;

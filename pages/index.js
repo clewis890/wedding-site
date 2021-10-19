@@ -4,21 +4,13 @@ import Link from 'next/link'
 import Header from '.././components/Header';
 import Footer from '.././components/Footer';
 import Image from 'next/image'
-// import Notiflix from "notiflix";
 
-
-// Notiflix.Notify.Info(
-//   'Info message text',
-//   function() {
-
-//   }
-// );
 
  export default function Home() {    
   return (
     <div className={styles.container}>
       <Head>
-        <title>Nós vamos casar! Antonia e Clark</title>
+        <title>We got hitched! Antonia & Clark</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />              
@@ -36,7 +28,7 @@ import Image from 'next/image'
               </div>
               <div className={styles.welcometext}>
                 <h3 className={styles.welcome}>Welcome</h3>
-                  <p className={styles.casal}>An American that loves mate and a Brazilian that loves speaking english. That's how we met and the desire to be togehter was so great that not even the pandemic could keep us apart! You are our special invites to celebrate the start of the rest of our lives together!</p>
+                  <p className={styles.casal}>An American that loves mate and a Brazilian that loves speaking english. That's how we met and the desire to be together was so great that not even the pandemic could keep us apart! You are our special invites to celebrate the start of the rest of our lives together!</p>
                   {/* Um americano que adora mate e uma brasileira que ama falar inglês. Foi assim que nos conhecemos e a vontade de ficarmos juntos era tão grande que nem a pandemia pode nos parar! Vocês são nossos convidados especiais para celebrar o começo do resto das nossas vidas!*/}              
               </div> 
               
