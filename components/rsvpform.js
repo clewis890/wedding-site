@@ -44,8 +44,6 @@ export default function MyForm() {
     const [formSubmitted, setFormSubmitted] = useState({ title: '', paragraph: '' }); 
     const { register, handleSubmit, watch, errors } = useForm();
   
-    const message_html = watch('message_html') || "";   
-
     function sendEmail(e) {
       e.preventDefault();
       emailjs.sendForm('gmail', 
@@ -116,7 +114,7 @@ export default function MyForm() {
                {/* <div>
               </div> */}
                {/* <label className={styles.label}>Name of plus one: </label> */}
-               <input placeholder="Additional guest names" type="text" name="name" className={styles.input} />
+               <input placeholder="Additional guest names" type="text" name="additional-name" className={styles.input} />
             </div>
             <div className={styles.label}>
                  {/* <label htmlfor="plus-one">How many guests?</label> */}
