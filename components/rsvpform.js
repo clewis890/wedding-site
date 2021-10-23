@@ -143,7 +143,7 @@ export default function MyForm() {
             placeholder="Send a message to the couple!" 
             type="text" name="message" 
             minlength="5" 
-            name="message_html"
+            name="message"
             className={styles.textarea} 
             // rows="15" col="30" 
             // wrap="soft" 
