@@ -32,11 +32,11 @@ export default function Registry() {
                     <a href="https://antoniaeclark.zankyou.com/br/lista-casamento" className={styles.registrylink} noopener="true" target="_blank">Nossa lista se encontra aqui</a> */}
                   <b className={styles.registrytext}>Visit our registry if you'd like!</b>
                     <a href="https://registry.theknot.com/antonia-abichequer-clark-lewis-december-2020-rs/43311778" className={styles.registrylink} noopener="true" target="_blank" type="hidden">Click here for our registry</a>
-                    <StripeWrapper>
+                    {/* <StripeWrapper>
                     <button className="btn">
                       You can also gift us cash by clicking here
                     </button>
-                </StripeWrapper>
+                </StripeWrapper> */}
                 </div>
             </div>
             <div className={styles.registrypicture}>
