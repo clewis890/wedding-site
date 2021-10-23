@@ -45,9 +45,9 @@ import Image from 'next/image'
             <div className={styles.card}>
               <h3 className={styles.newswelcome}>News</h3>
                 <div className={styles.newsbox}>
-                <b className={styles.blogdate}>17/10/2021</b>
+                <b className={styles.blogdate}>10/17/2021</b>
                     <p className={styles.casal}>
-                      We are holding a special wedding reception in Wenatchee, WA on December 4th, 2021!! Please see section above or invitation for details.
+                      We are holding a special wedding reception in Wenatchee, WA!! Please see section above or invitation for details.
                     </p>
                 <b className={styles.blogdate}>12/12/2020</b>
                     <p className={styles.casal}>Unfortunately, because of the decree in Rio Grande do Sul, our party had to be postponed to an undetermined date. But we have already received so much love and care from so many of you and we are so grateful for the wonderful family we have and such thoughtful friends. Thank you for everything, and we will update everybody when a new date is determined. Abraços e beijos!  
@@ -64,7 +64,7 @@ import Image from 'next/image'
                       className={styles.newspicture} 
                       src="/images/antoniaclark8.jpeg" alt="Antonia and Clark" width="130" height="200" /></a></Link>
                       </div>
-                  <b className={styles.blogdate}>10/11/2020</b>
+                  <b className={styles.blogdate}>11/10/2020</b>
                     <p className={styles.casal}>
                       Here we will put some information and details about the wedding reception. You'll not only be able to follow along to some of our best moments, you can also leave messages here for us and confirm your presence so that we can enjoy this wonderful moment together!
                       {/* Aqui colocaremos algumas informações e detalhes sobre o casamento. Além de poderem acompanhar alguns momentos nossos, podem deixar suas mensagens aqui e confirmarem a sua presença para que possamos curtir esse momento maravilhoso juntos! */}
