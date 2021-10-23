@@ -511,6 +511,13 @@ transform: translateY(-50%) translateX(-50%);
   flex-direction: row;
 }
 
+.albumpic img { transition: all 0.4s; }
+.albumpic img:hover, 
+.albumpic img:active {
+  transform: scale(1.1);
+  box-shadow: 1px 3px 10px 1px grey;
+}
+
 .guesttext { 
   font-size: 18px;
   flex-basis: 45%;
@@ -932,6 +939,12 @@ option.option {
       width: 200px;
       margin: 0 auto;
       height: 300px;
+    }
+
+    .albumpic img:hover,
+    .albumpic img:active {
+      transform: none;
+      box-shadow: none;
     }
 
     .form {
