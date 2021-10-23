@@ -300,11 +300,15 @@
   width: inherit;
   position: relative;
   margin: 2rem auto auto auto;
+  transition: all 0.4s;
+}
+a.photolink:hover {
+  box-Shadow: 6px 5px 8px rgb(109, 109, 109) !important;
 }
 
 .newsphotobox {
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 
 /** Registry Page **/
@@ -924,9 +928,12 @@ option.option {
     }
 
     div.albumpic {
-      flex-basis: 85%;
-      width: 100%;
+      flex-basis: 55%;
+      width: 200px;
+      margin: 0 auto;
+      height: 300px;
     }
+
     .form {
       padding: 5px;
     }
@@ -1024,7 +1031,7 @@ option.option {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-  }
+  } 
 
   div.albumpic {
     flex-basis: 40%;
@@ -1069,6 +1076,12 @@ option.option {
   .link { 
     font-weight: 400;
     font-size: 120%;
+  }
+ 
+
+  .newsphotobox {
+    display: flex;
+    align-self: flex-start;
   }
 
   .venuecard { width: 95%; }

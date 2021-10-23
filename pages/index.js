@@ -55,8 +55,14 @@ import Image from 'next/image'
                     </p>
                     <b className={styles.blogdate}>11/11/2020</b>
                     <p className={styles.casal}>Clark added a photo to our album. Click on the image below to check it out!</p>
-                    <div className={styles.newsphotobox}>
-                      <Link href="/photo-album"><a className={styles.photolink}><Image className={styles.newspicture} src="/images/antoniaclark8.jpeg" alt="Antonia and Clark" width="130" height="200" /></a></Link>
+                    <div className={styles.newsphotobox}
+                    >
+                      <Link href="/photo-album"><a 
+                      // style={{ boxShadow: '1px 2px 10px 2px black' }}
+                      className={styles.photolink}
+                      ><Image 
+                      className={styles.newspicture} 
+                      src="/images/antoniaclark8.jpeg" alt="Antonia and Clark" width="130" height="200" /></a></Link>
                       </div>
                   <b className={styles.blogdate}>10/11/2020</b>
                     <p className={styles.casal}>
