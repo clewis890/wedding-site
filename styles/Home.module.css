@@ -276,10 +276,19 @@
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
+  transition: all 0.3s;
   -webkit-border-radius:;
   -moz-border-radius:;
   -ms-border-radius:;
   -o-border-radius:;
+}
+
+.venuecard:hover,
+.venuecard:active { 
+  border: 1px solid rgb(233, 199, 5);
+  background-color: gold;
+  transform: scale(1.1);
+  box-shadow: 1px 3px 10px gold; 
 }
 
 .venue { width: 70%; }
@@ -978,6 +987,10 @@ option.option {
     margin-left: 1.5rem;
     font-size: 40px;
   }
+  .venuecard h3 {
+    font-size: 1.8em;
+  }
+  .venuecard { width: 80%; }
   .guestbookcard {
     background-color: #eaeaea;
     margin: 1rem;
@@ -1091,13 +1104,19 @@ option.option {
     font-size: 120%;
   }
  
-
   .newsphotobox {
     display: flex;
     align-self: flex-start;
   }
 
-  .venuecard { width: 95%; }
+  .venuecard { width: 90%; }
+  .venuecard h3 {
+    font-size: 1.8em;
+  }
+  .venuecard p {
+    font-size: 1.1em;
+  }
+
   .guesttext { text-align: center;}
   .rsvpcard {
     margin: 0 auto;

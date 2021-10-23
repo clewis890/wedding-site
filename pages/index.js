@@ -38,7 +38,7 @@ import Image from 'next/image'
                   <h3 className={styles.venuetitle}>About the Reception</h3>
                     <p className={styles.venueaddress}>
                       {/* Vai acontecer na D. Boat House que fica na Rua dos Pescadores, 1550 às 17 horas, o traje da ocasião é Alto Esporte e o mais importante pra nós é que todos se divirtam!*/}
-                      It will take place at 1621 Maiden Lane, Wenatchee, WA 98801. The dress for the occasion is dressy casual. Can't wait to see you there!
+                      It will take place at 1621 Maiden Lane, Wenatchee, WA 98801 from 3-5pm. The dress for the occasion is dressy casual. Can't wait to see you there!
                       </p>
               </div>
             </div>

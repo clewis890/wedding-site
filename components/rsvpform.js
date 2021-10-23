@@ -2,11 +2,8 @@ import React, { useState, useReducer } from 'react'
 import styles from '../styles/Home.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGlassCheers } from "@fortawesome/free-solid-svg-icons";
-// import TextField from '@material-ui/core/TextField';
 import emailjs from 'emailjs-com'
-// import {Button} from '@material-ui/core';
 import {useForm} from 'react-hook-form'
-// import { SwapCalls } from '@material-ui/icons';
 import Swal from 'sweetalert2';
 
 const initialState = {
@@ -79,10 +76,6 @@ export default function MyForm() {
           className={styles.form}
           >
             <div>
-              {/* <input type="hidden" 
-              name="_subject" 
-              value="New submission!" /> */}
-            {/* <label className={styles.label}>Full Name: *</label> */}
               <input 
               type="text"
               placeholder="Full Name"
@@ -94,7 +87,6 @@ export default function MyForm() {
               />
             </div>
             <div>
-          {/* <label className={styles.label}>E-mail: *</label> */}
               <input 
               placeholder="example@gmail.com" 
               type="email" 
@@ -111,13 +103,9 @@ export default function MyForm() {
                 <option className={styles.option} defaultValue="yes">Yes</option>
                 <option className={styles.option} defaultValue="no">No</option>
               </select>
-               {/* <div>
-              </div> */}
-               {/* <label className={styles.label}>Name of plus one: </label> */}
                <input placeholder="Additional guest names" type="text" name="additional-name" className={styles.input} />
             </div>
             <div className={styles.label}>
-                 {/* <label htmlfor="plus-one">How many guests?</label> */}
                   <select className={styles.input} id="numberofguests" name="number-of-guests" defaultValue="howmanyguests" required>
                     <option className={styles.option} defaultValue="" selected disabled>Choose here</option>
                     <option className={styles.option} defaultValue="1">1</option>
@@ -135,16 +123,12 @@ export default function MyForm() {
                   </div>
           <div>
             <div className={styles.messagebox}>
-          {/* <label className={styles.label} >Message: </label> */}
           <textarea 
-            // fullwidth="true"
             placeholder="Send a message to the couple!" 
             type="text" name="message" 
             minlength="5" 
             name="message"
             className={styles.textarea} 
-            // rows="15" col="30" 
-            // wrap="soft" 
             onChange={(e) => dispatch({ type: 'message', value: e.target.value })}
             required
           >
@@ -153,8 +137,6 @@ export default function MyForm() {
           </div>
           {showFormErr ? <p>Please fill in all sections to send a message</p> : null }
           <button type="submit" className={styles.rsvpbutton} value="Send message">Confirm</button>
-          {/* {status === "SUCCESS" ? <p className={styles.success}>Obrigado por confirmar sua presença! <FontAwesomeIcon icon={faGlassCheers} /></p> : <button className={styles.rsvpbutton}>Confirmar</button>}
-          {status === "ERROR" && <p>Ops! Alguma coisa deu errado</p>} */}
         </form>
          ) : (
           <div style={{ height: '60vh', display: 'flex', justifyContent: 'center', color: 'black', zIndex: '999', padding: '30px' }}>
@@ -167,139 +149,3 @@ export default function MyForm() {
           </div>
       )
     }
-
-        
-
-  
-  // function reducer(state, action) {
-  //   switch (action.type) {
-  //     case 'name':
-  //       return {
-  //         ...state,
-  //         name: action.value
-  //       };
-  //     case 'email':
-  //       return {
-  //         ...state,
-  //         email: action.value
-  //       };
-  //     case 'message':
-  //       return {
-  //         ...state,
-  //         message: action.value
-  //       };
-  //     default:
-  //       throw new Error();
-  //   }
-  // }
-
- 
-  //   return formSubmitted.title === '' ? (
-  
-  //       <div className={classes.root}>
-  //         <Header/>
-  //         <div className={classes.container}>
-  //           <h3 className={classes.formtitle}>
-  //             We'd love to hear from you!<br/>
-  //             Please fill out the form, include a brief message, and we will respond as fast
-  //             as humanly possible.
-  //           </h3>
-  //           <form 
-  //           // classes={classes.form} 
-  //           onSubmit={sendEmail}
-  //           >
-  //             <div className="row">
-  //               <div className={classes.input}>
-  //                 <input type="text"
-  //                   className={classes.formfield}
-  //                   placeholder="Name"
-  //                   name="from_name"
-  //                   onChange={(e) => dispatch({ type: 'name', value: e.target.value })}
-  //                   // ref={register({
-  //                   // required: "Please enter your name",
-  //                   // maxLength: {
-  //                   //   value: 30,
-  //                   //   message: "Please enter a name with fewer than 30 characters"
-  //                   // }
-  //                   // })
-  //                   // }
-  //                   required/><br/>
-  //                   {/* {errors.name && errors.name.message} */}
-  //                   <br/>
-  //               </div>
-  //               <div className={classes.input}>
-  //                 <input
-  //                   type="email"
-  //                   className={classes.formfield}
-  //                   placeholder="Email address"
-  //                   name="reply_to"
-  //                 //   ref={register({
-  //                 //   required: "Please enter an email",
-  //                 //   pattern: {
-  //                 //     value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]{2,}$/i,
-  //                 //     message: "invalid email address"
-  //                 //   }
-  //                 // })}
-  //                 onChange={(e) => dispatch({ type: 'email', value: e.target.value })}
-  //                   required/>
-  //                 <br/>
-  //                  {/* {errors.email && errors.email.message} */}
-  //                  <br/>
-  //               </div>
-  //               <div className={classes.inputsubject}>
-  //                 {/* <h3 className={classes.subject}>Subject:</h3> */}
-  //                 <input
-  //                   className={classes.formfield}
-  //                   type="textarea"
-  //                   name="subject"
-  //                   placeholder="Subject"
-  //                   styles={{
-  //                   [
-  //                     theme
-  //                       .breakpoints
-  //                       .down('xs')
-  //                   ]: {
-  //                     width: '60%'
-  //                   }
-  //                 }}
-  //                   required />
-  //               </div>
-  //               <div className={classes.input}>
-  //                 <textarea // id="standard-multiline-flexible"
-  //                   className={classes.formfield} 
-  //                   cols="30" rows="6" 
-  //                   fullwidth="true"
-  //                   multiline="true"
-  //                   placeholder="Write your message here" 
-  //                   name="message_html" 
-  //                   // ref={register({required: true})} 
-  //                   onChange={(e) => dispatch({ type: 'message', value: e.target.value })}
-  //                   required
-  //                   >
-  //                   </textarea>
-  //                 <br/> 
-  //                 {/* {errors.comment && "oops, you forgot your message!"} */}
-  //                 <br/>
-  
-  //               </div>
-  //               <div className={classes.input}>
-  //                 {showFormErr ? <p>Please fill in all sections to send a message</p> : null }
-  //                 <button type="submit" className={classes.submit} value="Send message">
-  //                   Submit
-  //                 </button>
-  //               </div>
-  //             </div>
-  //           </form>
-  //        </div>
-  //       </div>
-  //   ) : (
-  //     <div style={{ height: '60vh', display: 'flex', justifyContent: 'center', color: 'black', zIndex: '999', padding: '30px' }}>
-  //       <h3>
-  //         {formSubmitted.title}
-  //       </h3>
-  //       <p>
-  //         {formSubmitted.paragraph}
-  //       </p>
-  //     </div>
-  //   );
-  // }
