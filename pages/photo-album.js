@@ -4,8 +4,13 @@ import Header from '.././components/Header'
 import Footer from '.././components/Footer';
 import Image from 'next/image'
 import DisqusComments from '.././components/Blog'
-import Slider from "react-slick";
 
+const images = [
+  { src: '/images/antoniaclark1.jpg' },
+  { url: '/images/antoniaclark2.jpg' },
+  { url: '/images/antoniaclark3.jpg' },
+  { url: '/images/antoniaclark4.webp' },
+];
 
 function PhotoAlbum() {
     return (
@@ -30,7 +35,7 @@ function PhotoAlbum() {
                 </div>
 
                   <div className={styles.photoalbum}> 
-                
+ 
                     <div className={styles.albumpic}>
                     <Image 
                     src="/images/antoniaclark1.jpg" 
@@ -54,19 +59,54 @@ function PhotoAlbum() {
                     <Image src="/images/antoniaclark7.jpeg" alt="Antonia and Clark" width="250" height="250" />
                   </div>
                   <div className={styles.albumpic}>
-                    <Image src="/images/antoniaclark8.jpeg" alt="Antonia and Clark" width="250" height="350" />
+                    <Image 
+                    src="/images/antoniaclark8.jpeg" 
+                    alt="Antonia and Clark" 
+                    width="250" 
+                    height="350" 
+                    placeholder="blur"
+                    blurDataURL="/images/antoniaclark8.jpeg"
+                    />
                   </div>
                   <div className={styles.albumpic}>
-                    <Image src="/images/antoniaclark9.jpg" alt="Antonia and Clark" width="250" height="350" />
+                    <Image 
+                    src="/images/antoniaclark9.jpg" 
+                    alt="Antonia and Clark" 
+                    width="250" 
+                    height="350"
+                    placeholder="blur" 
+                    blurDataURL="/images/antoniaclark9.jpg"
+                   />
                   </div>
                   <div className={styles.albumpic}>
-                    <Image src="/images/antoniaclark10.jpg" alt="Antonia and Clark" width="250" height="350" />
+                    <Image 
+                    src="/images/antoniaclark10.jpg" 
+                    alt="Antonia and Clark" 
+                    width="250" 
+                    height="350"
+                    placeholder="blur"
+                    blurDataURL="/images/antoniaclark10.jpg"
+                    />
                   </div> 
                   <div className={styles.albumpic}>
-                    <Image src="/images/antoniaclark11.jpg" alt="Antonia and Clark" width="250" height="350" />
+                    <Image 
+                    src="/images/antoniaclark11.jpg" 
+                    alt="Antonia and Clark" 
+                    width="250" 
+                    height="350" 
+                    placeholder="blur"
+                    blurDataURL="/images/antoniaclark11.jpg"
+                    />
                   </div> 
                   <div className={styles.albumpic}>
-                    <Image src="/images/antoniaclark12.jpg" alt="Antonia and Clark" width="250" height="350" />
+                    <Image 
+                    src="/images/antoniaclark12.jpg" 
+                    alt="Antonia and Clark" 
+                    width="250" 
+                    height="350"
+                    placeholder="blur"
+                    blurDataURL="/images/antoniaclark12.jpg" 
+                    />
                   </div> 
                     </div>  
                   <div className={styles.photoblog}>

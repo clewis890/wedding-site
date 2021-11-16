@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Link from 'next/link'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from '.././components/Header'
@@ -30,13 +31,10 @@ export default function Registry() {
                 <div className={styles.registrybox}>
                   {/* <b className={styles.registrytext}>Para nossa familia e amigos brasileiros</b> 
                     <a href="https://antoniaeclark.zankyou.com/br/lista-casamento" className={styles.registrylink} noopener="true" target="_blank">Nossa lista se encontra aqui</a> */}
-                  <b className={styles.registrytext}>Visit our registry if you'd like!</b>
-                    <a href="https://registry.theknot.com/antonia-abichequer-clark-lewis-december-2020-rs/43311778" className={styles.registrylink} noopener="true" target="_blank" type="hidden">Click here for our registry</a>
-                    {/* <StripeWrapper>
-                    <button className="btn">
-                      You can also gift us cash by clicking here
-                    </button>
-                </StripeWrapper> */}
+                  {/* <b className={styles.registrytext}></b> */}
+                    <Link href="/registry/our-registries"><a className={styles.registrylink} noopener="true" target="_blank" type="hidden">Visit our registry</a></Link>
+                    {/* <a href="https://registry.theknot.com/antonia-abichequer-clark-lewis-december-2020-rs/43311778" className={styles.registrylink} noopener="true" target="_blank" type="hidden">Click here for our registry</a> */}
+                   
                 </div>
             </div>
             <div className={styles.registrypicture}>

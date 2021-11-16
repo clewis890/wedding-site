@@ -1,6 +1,6 @@
 {
   "name": "wedding-site",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -21,6 +21,7 @@
     "@mui/material": "^5.0.4",
     "axios": "^0.23.0",
     "cosmicjs": "^3.3.2",
+    "css-purge": "^3.1.8",
     "disqus-react": "^1.0.10",
     "emailjs-com": "^3.2.0",
     "embla-carousel-react": "^5.0.1",
@@ -28,7 +29,7 @@
     "framer-motion": "^2.9.4",
     "keen-slider": "^5.5.1",
     "materialize-css": "^1.0.0",
-    "next": "10.0.0",
+    "next": "^12.0.0",
     "next-auth": "^3.1.0",
     "next-blurhash": "^0.2.0",
     "next-images": "^1.8.1",
