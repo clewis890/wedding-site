@@ -26,7 +26,7 @@ export default function Registry() {
             <div className={styles.welcometext}>
               <h3 className={styles.registrytitle}>Our Registries</h3>
                 <div className={styles.registrybox}>
-                  <b className={styles.registrytext}>Visit our cash registry or our registry through Amazon.</b>
+                  <b className={styles.registrytext}>Feel free to visit either of our registries. We are already so grateful for your support and for your presence at our reception.</b>
                     <a href="https://registry.theknot.com/antonia-abichequer-clark-lewis-december-2020-rs/43311778" className={styles.registrylink} noopener="true" target="_blank" type="hidden">Click here for our cash registry</a>
                     <a href="https://www.amazon.com/wedding/antonia-lewis-clark-lewis--december-2021/registry/1988TUCRQ6240" className={styles.registrylink} noopener="true" target="_blank" type="hidden">Click here for our Amazon registry</a>
                 </div>
